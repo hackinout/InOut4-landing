@@ -1,0 +1,143 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* header */
+
+header {
+    height: 700px;
+    background-color: #5252DB;
+}
+.header-logo {
+    margin:60px;
+    margin-top:100px;
+    margin-bottom: 111px;
+}
+
+.location {
+    font-size:18px;
+    line-height: 23px;
+}
+
+.header-content {
+    margin: 60px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+ /*section*/
+.section-heading {
+    text-transform: uppercase;
+    font-size: 44px;
+    line-height: 56px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    color: #3A3A62;
+}
+
+section {
+    padding-bottom: 70px;
+}
+
+.text-color {
+    color: #00FFC2;
+    font-weight: bold;
+}
+
+/*sponsor styling*/
+.sponsors-img {
+    width:100%;
+    height:100%;
+}
+
+
+/* About styling */
+.about {
+    background: #3A3A62;
+}
+
+.about-heading {
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1.875em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.section-lead {
+    font-size: 3.375em;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #00FFC2;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+    font-size:31px
+}
+
+/* about end */
+
+/* footer styling */
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #3A3A62;
+}
+
+.footer-text {
+    display: inline-block;
+    font-size:18px;
+    font-weight: 500;
+}
+
+.inout-logo {
+    display: inline-block;
+    width: 82px;
+    height: 12px;
+}
+
+.social-buttons {
+    margin-left: 180px;
+}
+
+.btn-social {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn-outline {
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+    margin-left: 10px;
+}
+
+.btn-social{
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsiveness */
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
