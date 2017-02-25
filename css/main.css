@@ -7,6 +7,14 @@ body {
 header {
     height: 700px;
     background-color: #5252DB;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -o-background-size: cover;
+    background-position: calc(100% + 326px) calc(100%);
+    background-image: url(../img/header.png);
 }
 .header-logo {
     margin:60px;
@@ -55,7 +63,7 @@ section {
 
 
 /* About styling */
-.about {
+.about-container {
     background: #3A3A62;
 }
 
@@ -72,7 +80,7 @@ section {
     font-size: 3.375em;
     font-weight: bold;
     line-height: 1.2em;
-    color: #00FFC2;
+    color:#00FFC2;
 }
 
 .section-paragraph {
@@ -80,6 +88,12 @@ section {
     font-size:31px
 }
 
+.video-container {
+    background-color: #00FFC2;
+}
+.embed-responsive-inout {
+    padding-bottom: 64.20%;
+}
 /* about end */
 
 /* footer styling */
