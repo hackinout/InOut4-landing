@@ -114,10 +114,12 @@ footer {
     display: inline-block;
     font-size:18px;
     font-weight: 500;
+    color: #8B8BAE;
 }
 
 .inout-logo {
     display: inline-block;
+    vertical-align: baseline;
     width: 82px;
     height: 12px;
 }
