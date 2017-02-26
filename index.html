@@ -30,17 +30,19 @@
 
 <body>
     <header>
+  
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
                     <img class="header-logo" src="img/hackinout.svg" />
                     <h1 class="header-content">Be ready, </br> we are <span class="text-color">coming soon.</span>
-         </br>
-         <span class="location">
+                        </br>
+                        <span class="location">
              BENGALURU, 2017
          </span>
-         </h1>
+                    </h1>
                 </div>
+                
             </div>
         </div>
     </header>
@@ -50,17 +52,17 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 about-container">
-                    <div class="col-md-6 col-md-offset-2">
+                    <div class="col-md-10 col-md-offset-2">
                         <h1 class="about-heading">August 2016 Aftermovie</h1>
-                        <p class="section-lead">Here is what you can expect from hackinout 4.</p>
-                        <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipo commodi officia am non illo voluptatem quae delectus odit vel itaque amet.</p>
+                        <p class="section-lead">Here is what <br> you can expect from hackinout 4.</p>
+                        <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipo commodi officia am non
+                            illo voluptatem quae delectus odit vel itaque amet.</p>
                     </div>
                 </div>
                 <div class="col-md-6 video-container">
                     <!--<img src="img/watch-video.svg">-->
-                     <div class="embed-responsive embed-responsive-inout">
-                         <iframe src="https://www.youtube.com/embed/SzmioR4Dj8E" frameborder="0" allowfullscreen></iframe>
-                         </div>
+                        <iframe src="https://www.youtube.com/embed/SzmioR4Dj8E" frameborder="0" allowfullscreen></iframe>
+                        <!--<iframe width="600" height="338" src="https://www.youtube.com/embed/WQfdwsPao9E" frameborder="0" allowfullscreen></iframe>-->
                 </div>
             </div>
             <!-- /.row -->
@@ -115,6 +117,19 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        var about = document.querySelector('.about-container');
+        var video = document.querySelector('.video-container');
+        var yt = document.querySelector('iframe');
+        var aboutWidth = about.getBoundingClientRect().width;
+        var aboutHeight = about.getBoundingClientRect().height;
+        var vW = video.style.width = aboutWidth +'px';
+        var vH = video.style.height = aboutHeight + 'px';
+        yt.width = vW;
+        yt.height = vH;
+
+    </script>
 
 </body>
 
