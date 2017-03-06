@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Rajdhani-Semibold';
+    src: url('../fonts/Rajdhani-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Rajdhani-Regular';
+    src: url('../fonts/Rajdhani-Regular.ttf');
+}
+
 body {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
 }
 
 /* header */
@@ -27,6 +37,7 @@ header {
 }
 
 .header-content {
+    font-family: Rajdhani-Regular;
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 500;
@@ -37,6 +48,7 @@ header {
  /*section*/
 .section-heading {
     text-transform: uppercase;
+    font-family: Rajdhani-Semibold;
     font-size: 44px;
     line-height: 56px;
     margin-bottom: 60px;
@@ -51,6 +63,7 @@ section {
 .text-color {
     color: #00FFC2;
     font-weight: bold;
+    font-family: "Rajdhani-Semibold"
 }
 
 /*sponsor styling*/
@@ -68,6 +81,7 @@ section {
 
 .about-heading {
     /*margin-top: 90px;*/
+    font-family: "Rajdhani-Semibold";
     text-transform: uppercase;
     font-size: 1.5em;
     line-height: 1.875em;
@@ -78,7 +92,9 @@ section {
 .section-lead {
     font-size: 3.375em;
     font-weight: bold;
+    font-family: "Rajdhani-Semibold";
     line-height: 1.2em;
+    text-transform: uppercase;
     color:#00FFC2;
 }
 
@@ -86,7 +102,6 @@ section {
     margin: 30px 0;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
-    /*margin-bottom: 90px;*/
 }
 
 .video-container {
@@ -109,6 +124,7 @@ footer {
 
 .footer-text {
     display: inline-block;
+    font-family: Rajdhani-Semibold;
     font-size:18px;
     margin-top: 1em !important;
     font-weight: 500;
