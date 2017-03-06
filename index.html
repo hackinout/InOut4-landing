@@ -30,7 +30,7 @@
 
 <body>
     <header>
-  
+
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
@@ -42,7 +42,7 @@
          </span>
                     </h1>
                 </div>
-                
+
             </div>
         </div>
     </header>
@@ -60,10 +60,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 video-container">
-                    <!--<img src="img/watch-video.svg">-->
-                        <iframe src="https://www.youtube.com/embed/SzmioR4Dj8E" frameborder="0" allowfullscreen></iframe>
-                        <!--<iframe width="600" height="338" src="https://www.youtube.com/embed/WQfdwsPao9E" frameborder="0" allowfullscreen></iframe>-->
-                </div>
+                      <img src="img/watch-video.jpg"/ id="play-video" class="img-responsive">
+                      <iframe style="display:none" id="video" src="https://www.youtube.com/embed/SzmioR4Dj8E" frameborder="0" allowfullscreen></iframe>                </div>
             </div>
             <!-- /.row -->
         </div>
@@ -114,23 +112,9 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script>
-        var about = document.querySelector('.about-container');
-        var video = document.querySelector('.video-container');
-        var yt = document.querySelector('iframe');
-        var aboutWidth = about.getBoundingClientRect().width;
-        var aboutHeight = about.getBoundingClientRect().height;
-        var vW = video.style.width = aboutWidth +'px';
-        var vH = video.style.height = aboutHeight + 'px';
-        yt.width = vW;
-        yt.height = vH;
-
-    </script>
-
+    <script src="js/main.js"> </script>
 </body>
 
 </html>
