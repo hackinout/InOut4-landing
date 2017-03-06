@@ -93,7 +93,7 @@ section {
     padding: 0;
 }
 
-iframe{
+iframe {
     padding: 0
 }
 
@@ -110,6 +110,7 @@ footer {
 .footer-text {
     display: inline-block;
     font-size:18px;
+    margin-top: 1em !important;
     font-weight: 500;
     color: #8B8BAE;
 }
@@ -119,6 +120,7 @@ footer {
     vertical-align: baseline;
     width: 82px;
     height: 12px;
+    cursor: pointer;
 }
 
 .social-buttons {
