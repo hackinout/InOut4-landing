@@ -20,5 +20,5 @@ var pV = aboutHeight + 'px';
 console.log(pV);
 yt.width = vW;
 yt.height = vH;
-play_video.style.height = pV;
+play_video.style.height = "79%";
 play_video.style.width = "100%";
