@@ -107,7 +107,9 @@ section {
 .video-container {
     padding: 0;
 }
-
+#play-video {
+    width:100%;
+}
 iframe {
     padding: 0
 }
