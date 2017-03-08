@@ -133,9 +133,9 @@ footer {
 
 .inout-logo {
     display: inline-block;
-    vertical-align: baseline;
-    width: 82px;
-    height: 12px;
+    vertical-align: middle;
+    /*width: 82px;
+    height: 12px;*/
     cursor: pointer;
 }
 
