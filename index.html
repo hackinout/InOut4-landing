@@ -29,6 +29,13 @@
 </head>
 
 <body>
+    <div id="play-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content embed-responsive embed-responsive-16by9">
+                <iframe id="video" src="https://www.youtube.com/embed/SzmioR4Dj8E" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
     <header>
 
         <div class="container-fluid">
@@ -59,9 +66,12 @@
                             illo voluptatem quae delectus odit vel itaque amet.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 video-container">
-                      <img src="img/yt-video.jpg" id="play-video" class="img-responsive">
-                      <iframe style="display:none" id="video" src="https://www.youtube.com/embed/SzmioR4Dj8E" frameborder="0" allowfullscreen></iframe>                </div>
+                <div class="col-lg-6 col-md-6 video-container" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <a href="" id="play-video">
+                        <img src="img/yt-video.jpg" id="play-video-bg" class="img-responsive">
+                        <img src="img/watch-video.svg" class="play-button img-responsive">
+                    </a>
+                </div>
             </div>
             <!-- /.row -->
         </div>
@@ -88,31 +98,36 @@
             <div class="row">
                 <div class="col-md-6 col-xs-12">
                     <div class="col-md-5 col-md-offset-1">
-                        <p class="footer-text"><i class="fa fa-code"></i> with <i class="fa fa-heart beating-heart beat-the-heart"></i> at <a href="https://github.com/hackinout" target="_blank" title="InOut on GitHub">
-                        <img class="inout-logo" src="img/Logo_Footer.svg" /></a>
+                        <p class="footer-text"><i class="fa fa-code"></i> with <i class="fa fa-heart beating-heart beat-the-heart"></i> at
+                            <a href="https://github.com/hackinout" target="_blank" title="InOut on GitHub">
+                                <img class="inout-logo" src="img/Logo_Footer.svg" /></a>
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <div class="col-md-6 col-md-offset-5">
-                    <ul class="list-inline">
-                        <li><a href="https://twitter.com/hackinoutco" class="btn-social btn-outline">
-                        <div class="inout-twitter inout-social"></div>
-                        </a>
-                        </li>
-                        <li><a href="https://www.facebook.com/hackinout/" class="btn-social btn-outline">
-                        <div class="inout-facebook inout-social"></div>
-                        </a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/company/hack-inout" class="btn-social btn-outline">
-                        <div class="inout-linkedin inout-social"></div>
-                        </a>
-                        </li>
-                        <li><a href="https://www.instagram.com/hackinout.official/" class="btn-social btn-outline">
-                        <div class="inout-instagram inout-social"></div>
-                        </a>
-                        </li>
-                    </ul>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://twitter.com/hackinoutco" class="btn-social btn-outline">
+                                    <div class="inout-twitter inout-social"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/hackinout/" class="btn-social btn-outline">
+                                    <div class="inout-facebook inout-social"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/hack-inout" class="btn-social btn-outline">
+                                    <div class="inout-linkedin inout-social"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/hackinout.official/" class="btn-social btn-outline">
+                                    <div class="inout-instagram inout-social"></div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -125,7 +140,9 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"> </script>
+    <script src="js/main.js">
+
+    </script>
 </body>
 
 </html>

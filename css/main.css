@@ -107,9 +107,24 @@ section {
 .video-container {
     padding: 0;
 }
-#play-video {
+#play-video-bg {
     width:100%;
 }
+
+.play-button{
+    position: relative;
+    bottom: 200px;
+    left: 150px;
+    width: 80px;
+    -webkit-transition:transform 0.5s;
+    -moz-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.scale{
+    transform: scale(1.1);
+}
+
 iframe {
     padding: 0
 }
@@ -213,4 +228,8 @@ footer {
     }
 }
 
+@media (min-width: 992px){
+    .modal-lg {
+        width: 90%;
+}
 
