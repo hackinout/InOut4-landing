@@ -236,6 +236,9 @@ footer {
     .modal-lg {
         width: 90%;
     }
+    .section-heading {
+        margin-top: -90px;
+    }
     .list-inline, .text-footer {
         text-align: center;
     }
