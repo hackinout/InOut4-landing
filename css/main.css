@@ -59,10 +59,61 @@ header {
     margin-top:15px;
     color: #3bf2bd;
 }
+
+/* Newsletter form*/
+
 .mc-button {
     background-color: rgb(255, 255, 255) !important;
-    color: #5252db !important;
+    color: #5252DB !important;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 25px;
     text-transform: uppercase;
+}
+
+input {
+    border: 1px solid rgb(220, 219, 235);
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 10px;
+    color: #000;
+    transition: all .15s ease-in;
+}
+
+input[type="email"] {
+    display: inline-block;
+    width: 75%;
+    box-sizing: border-box;
+    background: #5252db;
+    color: #610b0b;
+    height: 44px !important;
+}
+
+input[type="submit"] {
+    margin-left: -112px;
+    height: 44px;
+    display: inline-block;
+    vertical-align: middle;
+    background: blue;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+input[type=submit]::focus {
+    border: 1px solid #fff;
+}
+
+input:focus {
+    border-color: rgb(53, 114, 210);
+    box-shadow: 0px 0px 8px 2px rgba(53, 114, 210, .5);
+    outline: none;
+}
+
+input::placeholder {
+    color: #FFFFFF;
 }
 
  /*section*/
@@ -234,42 +285,6 @@ footer {
 
 .inout-facebook:hover {
     background-image: url('../img/Facebook_over.svg');
-}
-
-/* Newsletter form*/
-
-input {
-    border: 1px solid rgb(220, 219, 235);
-    border-radius: 4px;
-    font-size: 13px;
-    padding: 10px;
-    color: #000;
-    transition: all .15s ease-in;
-}
-
-input[type=email] {
-    width: 60%;
-}
-
-input[type=submit] {
-    background-color: rgb(53, 114, 210);
-    color: #fff;
-    font-weight: bold;
-    border: 1px solid transparent;
-}
-
-input[type=submit]::focus {
-    border: 1px solid #fff;
-}
-
-input:focus {
-    border-color: rgb(53, 114, 210);
-    box-shadow: 0px 0px 8px 2px rgba(53, 114, 210, .5);
-    outline: none;
-}
-
-input::placeholder {
-    color: #999;
 }
 
 /* Responsiveness */
