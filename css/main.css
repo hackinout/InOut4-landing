@@ -59,6 +59,12 @@ header {
     margin-top:15px;
     color: #3bf2bd;
 }
+.mc-button {
+    background-color: rgb(255, 255, 255) !important;
+    color: #5252db !important;
+    text-transform: uppercase;
+}
+
  /*section*/
 .section-heading {
     text-transform: uppercase;
