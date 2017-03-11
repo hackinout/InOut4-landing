@@ -27,6 +27,13 @@ var pV = aboutHeight + 'px';
 console.log(pV);
 // yt.width = vW;
 // yt.height = vH;
-about.style.height = play_videoHeight + 'px';
+// about.style.height = play_videoHeight + 'px';
 // play_video.style.height = "79%";
 // play_video.style.width = "100%";
+var windowWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+if (windowWidth > 992) {
+	about.style.height = play_videoHeight + 'px';
+}
+console.log("windowWidth:", windowWidth)
+console.log("windowHeight:", windowHeight)
