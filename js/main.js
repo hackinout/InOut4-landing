@@ -65,7 +65,7 @@ function register($form) {
 				$('.success').hide();
             } else {
 				$('.error').hide();
-				$( ".success" ).html( "<p>Thank you for subscribing</p>" );
+				$( ".success" ).html( "<p>We have sent you a confirmation email</p>" );
             }
         }
     });
