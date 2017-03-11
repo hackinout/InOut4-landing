@@ -72,7 +72,7 @@ header {
 }
 
 input {
-    border: 1px solid rgb(220, 219, 235);
+    border: 2px solid white;
     border-radius: 4px;
     font-size: 13px;
     padding: 10px;
