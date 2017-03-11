@@ -16,9 +16,9 @@
 
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
-<!--     <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> -->
+    <!--     <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,18 +51,27 @@
          </span>
                     </h1>
                 </div>
-     <!-- Begin MailChimp Signup Form -->
-     <div class="feedback col-md-5 col-md-offset-1">
-<form action="//hackinout.us15.list-manage.com/subscribe/post?u=e44c1f194bec93e238615469e&amp;id=f6f826e769" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="lovely-human@example.com" required>
+                <!-- Begin MailChimp Signup Form -->
+                <div class="feedback col-md-5 col-md-offset-1">
+                    <form action="http://hackinout.us15.list-manage.com/subscribe/post-json?u=e44c1f194bec93e238615469e&amp;id=f6f826e769&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="lovely-human@example.com" required>
 
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value=""></div>
-            <input type="submit" value="lemme know" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </div>
-        </form>
-        </div>
-<!--End mc_embed_signup-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+                        </div>
+                        <input type="submit" value="lemme know" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </div>
             </div>
+            <div id="subscribe-result" class="col-md-3 col-md-offset-1">
+                <div class="success">
+                </div>
+                <div class="error">
+                </div>
+            </div>
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
+        </div>
         </div>
     </header>
 
@@ -73,9 +82,9 @@
                 <div class="col-lg-6 col-md-6 about-container">
                     <div class="col-md-10 col-md-offset-2 about-content">
                         <h1 class="about-heading">August 2016 Aftermovie</h1>
-                        <p class="section-lead">Here is what <br> you can expect from hackinout 4.</p>
-                        <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipo commodi officia am non
-                            illo voluptatem quae delectus odit vel itaque amet.</p>
+                        <p class="section-lead">Here is what
+                            <br> you can expect from hackinout 4.</p>
+                        <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipo commodi officia am non illo voluptatem quae delectus odit vel itaque amet.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 video-container" data-toggle="modal" data-target=".bs-example-modal-lg">
@@ -112,7 +121,8 @@
                     <div class="col-md-5 col-md-offset-1 text-footer">
                         <p class="footer-text"><i class="fa fa-code"></i> with <i class="fa fa-heart beating-heart beat-the-heart"></i> at
                             <a href="https://github.com/hackinout" target="_blank" title="InOut on GitHub">
-                                <img class="inout-logo" src="img/Logo_Footer.svg" /></a>
+                                <img class="inout-logo" src="img/Logo_Footer.svg" />
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -153,7 +163,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js">
-
     </script>
 </body>
 
