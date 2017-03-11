@@ -38,8 +38,6 @@ if (windowWidth > 992) {
 console.log("windowWidth:", windowWidth)
 console.log("windowHeight:", windowHeight)
 
-
-
 $(document).ready( function () {
     var $form = $('form');
     if ( $form.length > 0 ) {

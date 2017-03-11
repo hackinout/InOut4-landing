@@ -45,7 +45,20 @@ header {
     line-height: 58px;
     color: #FFFFFF;
 }
-
+/* form styling */
+.error {
+    font-size:20px;
+    margin-top: 15px;
+    color: darkred;
+}
+.error a {
+    color: #00FFC2
+}
+.success {
+    font-size: 20px;
+    margin-top:15px;
+    color: #3bf2bd;
+}
  /*section*/
 .section-heading {
     text-transform: uppercase;
@@ -276,17 +289,4 @@ input::placeholder {
     .list-inline, .text-footer {
         text-align: center;
     }
-}
-.error {
-    font-size:20px;
-    margin-top: 15px;
-    color: darkred;
-}
-.error a {
-    color: #00FFC2
-}
-.success {
-    font-size: 20px;
-    margin-top:15px;
-    color: #3bf2bd;
 }
