@@ -37,3 +37,25 @@ if (windowWidth > 992) {
 }
 console.log("windowWidth:", windowWidth)
 console.log("windowHeight:", windowHeight)
+var frm = $('#feedback-form');
+    frm.submit(function (ev) {
+      // $('.fail span').toggleClass('hide-msg')
+      $('.success span').toggleClass('hide-msg')
+      $.ajax({
+        type: frm.attr('method'),
+        // type: 'GET',
+        url: frm.attr('action'),
+        // url: '/',
+        data: {feedback: $('#feedback-form textarea').val()},
+        success: function (data) {
+          $('.fail span').addClass('hide-msg')
+          $('.success span').removeClass('hide-msg')
+        },
+        error: function () {
+          $('.success span').addClass('hide-msg')
+          $('.fail span').removeClass('hide-msg')
+        }
+      });
+
+      ev.preventDefault();
+    })
