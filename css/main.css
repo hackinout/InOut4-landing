@@ -333,3 +333,14 @@ footer {
             background-position : calc(100% + 5em) calc(100%);
     }
 }
+@media (min-width: 1700px) {
+    .about-heading {
+        font-size: 1.5vw;
+    }
+    .section-lead {
+        font-size: 3vw;
+     }
+     .section-paragraph {
+         font-size: 2vw;
+     }
+}
