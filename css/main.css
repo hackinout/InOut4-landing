@@ -258,35 +258,35 @@ footer {
   -webkit-transition-timing-function: ease-in-out;
 }
 .inout-twitter {
-    background-image: url('../img/Twitter_normal.svg');
+    background-image: url('../img/inout-twitter.svg');
 }
 
 .inout-twitter:hover {
-    background-image: url('../img/Twitter_over.svg');
+    background-image: url('../img/inout-twitter-hover.svg');
 }
 
 .inout-linkedin {
-    background-image: url('../img/Linkedin_normal.svg');
+    background-image: url('../img/inout-linkedin.svg');
 }
 
 .inout-linkedin:hover {
-    background-image: url('../img/Linkedin_over.svg');
+    background-image: url('../img/inout-linkedin-hover.svg');
 }
 
 .inout-instagram {
-    background-image: url('../img/Insta_normal.svg');
+    background-image: url('../img/inout-instagram.svg');
 }
 
 .inout-instagram:hover {
-    background-image: url('../img/Insta_over.svg');
+    background-image: url('../img/inout-instagram-hover.svg');
 }
 
 .inout-facebook {
-    background-image: url('../img/Facebook_normal.svg');
+    background-image: url('../img/inout-facebook.svg');
 }
 
 .inout-facebook:hover {
-    background-image: url('../img/Facebook_over.svg');
+    background-image: url('../img/inout-facebook-hover.svg');
 }
 
 /* Responsiveness */
