@@ -219,6 +219,10 @@ footer {
     font-size:18px;
     font-weight: 500;
     color: #8B8BAE;
+    line-height: 1.9em;
+}
+.fa {
+    vertical-align: middle !important;
 }
 
 .inout-logo {
