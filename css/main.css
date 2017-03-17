@@ -304,6 +304,9 @@ footer {
     .text-footer {
         margin-left: 15% !important;
     }
+    .footer-social {
+        margin-left: 48% !important;
+    }
 }
 
 @media (max-width: 992px){
