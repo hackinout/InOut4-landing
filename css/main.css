@@ -300,6 +300,12 @@ footer {
     }
 }
 
+@media (min-width: 992px) {
+    .text-footer {
+        margin-left: 15% !important;
+    }
+}
+
 @media (max-width: 992px){
     .modal-lg {
         width: 90%;
