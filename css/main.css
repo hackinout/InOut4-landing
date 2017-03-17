@@ -328,3 +328,8 @@ footer {
         padding-left: 4px !important;
     }
 }
+@media (min-width: 1920px) {
+    header {
+            background-position : calc(100% + 5em) calc(100%);
+    }
+}
