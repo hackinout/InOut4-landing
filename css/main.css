@@ -150,9 +150,7 @@ section {
     background: #3A3A62;
     padding: 60px 20px;
 }
-.about-content {
-    margin-left: calc(7vmax);
-}
+
 .about-heading {
     /*margin-top: 90px;*/
     font-family: "Rajdhani-Semibold";
@@ -311,6 +309,9 @@ footer {
     .footer-social {
         margin-left: 48% !important;
     }
+    .about-content {
+        margin-left: calc(7vmax);
+    }
 }
 
 @media (max-width: 992px){
@@ -322,5 +323,8 @@ footer {
     }
     .list-inline, .text-footer {
         text-align: center;
+    }
+    .about-container {
+        padding-left: 4px !important;
     }
 }
