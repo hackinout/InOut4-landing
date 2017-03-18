@@ -122,7 +122,6 @@ input::placeholder {
     font-family: Rajdhani-Semibold;
     font-size: 44px;
     line-height: 56px;
-/*     margin-bottom: 60px; */
     font-weight: bold;
     margin-top: -70px;
     color: #3A3A62;
@@ -289,19 +288,31 @@ footer {
     background-image: url('../img/inout-facebook-hover.svg');
 }
 
+/* youtube video modal */
+.modal-lg {
+        width: 90%;
+}
+
 /* Responsiveness */
 
 /* mobile */
-@media(max-width:500px) {
+/* No greater than 500px, no less than 300px */
+@media(max-width:500px) and (min-width:300px) {
+    header {
+         background-position: calc(100% + 37vw) calc(100%);
+    }
     .header-content {
         font-size: 3.375em;
+    }
+    .header-logo {
+        margin-top:100px;
+        margin-bottom: 111px;
     }
 }
 
 
 @media(max-width:768px) {
     section {
-        /*padding-top: 25px;*/
         padding-bottom: 25px;
     }
 
@@ -323,9 +334,6 @@ footer {
 }
 
 @media (max-width: 992px){
-    .modal-lg {
-        width: 90%;
-    }
     .section-heading {
         margin-top: -90px;
     }
