@@ -184,8 +184,8 @@ section {
 
 .play-button{
     position: relative;
-    bottom: 200px;
-    left: 150px;
+    bottom: 12em;
+    left: 8em;
     width: 80px;
     -webkit-transition:transform 0.5s;
     -moz-transition: transform 0.5s;
@@ -306,7 +306,13 @@ footer {
         display: block;
     }
 }
-
+@media(max-width:320px) {
+    .play-button {
+        bottom: 10em;
+    left: 7em;
+    width: 60px;
+    }
+}
 /* No greater than 500px, no less than 300px */
 @media(max-width:500px) and (min-width:300px) {
     header {
