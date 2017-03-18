@@ -364,6 +364,17 @@ footer {
     .about-container {
         padding-left: 4px !important;
     }
+    footer .container-fluid {
+        position: relative;
+    }
+    .text-footer {
+        position: relative;
+        top: 8em;
+    }
+    .footer-social {
+         position: relative;
+         bottom: 2em;
+    }
 }
 @media (min-width: 1920px) {
     header {
