@@ -291,6 +291,14 @@ footer {
 
 /* Responsiveness */
 
+/* mobile */
+@media(max-width:500px) {
+    .header-content {
+        font-size: 3.375em;
+    }
+}
+
+
 @media(max-width:768px) {
     section {
         /*padding-top: 25px;*/
