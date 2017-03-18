@@ -65,7 +65,7 @@ header {
 .mc-button {
     background-color: rgb(255, 255, 255) !important;
     color: #5252DB !important;
-    font-size: 19px;
+    font-size: 1.35em;
     font-weight: 600;
     line-height: 25px;
     text-transform: uppercase;
@@ -296,6 +296,17 @@ footer {
 /* Responsiveness */
 
 /* mobile */
+/* Mobile type - small */
+@media(max-width:375px) {
+    input[type="submit"] {
+        margin-left: 0px;
+    }
+    .mc-button {
+        width:75%;
+        display: block;
+    }
+}
+
 /* No greater than 500px, no less than 300px */
 @media(max-width:500px) and (min-width:300px) {
     header {
