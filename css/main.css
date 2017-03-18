@@ -308,7 +308,7 @@ footer {
 }
 @media(max-width:320px) {
     .play-button {
-        bottom: 10em;
+    bottom: 10em;
     left: 7em;
     width: 60px;
     }
@@ -327,7 +327,11 @@ footer {
     }
 }
 
-
+@media(max-width:992px) and (min-width:768px) {
+.about-content {
+    margin-left: calc(7vmax);
+}
+}
 @media(max-width:768px) {
     section {
         padding-bottom: 25px;
