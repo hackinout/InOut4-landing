@@ -76,7 +76,7 @@ header {
 input {
     border: 2px solid white;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px;
     color: #000;
     transition: all .15s ease-in;
@@ -87,7 +87,7 @@ input[type="email"] {
     width: 75%;
     box-sizing: border-box;
     background: #5252db;
-    color: #610b0b;
+    color: #FFFFFF;
     height: 44px !important;
 }
 
@@ -114,8 +114,17 @@ input:focus {
     outline: none;
 }
 
-input::placeholder {
-    color: #FFFFFF;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FFFFFF;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #FFFFFF;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #FFFFFF;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #FFFFFF;
 }
 
  /*section*/
@@ -359,6 +368,12 @@ footer {
     }
     .about-content {
         margin-left: calc(7vmax);
+    }
+    input {
+        font-size:20px;
+    }
+    input[type="submit"] {
+            vertical-align: bottom;
     }
 }
 
