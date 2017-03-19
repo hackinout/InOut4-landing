@@ -30,6 +30,8 @@ header {
     margin-top:100px;
     margin-bottom: 111px;
     margin-left: calc(-1vmin);
+    width: auto;
+    height: auto;
 }
 
 .location {
@@ -224,6 +226,8 @@ footer {
 
 .inout-logo {
     display: inline-block;
+    width: auto;
+    height: auto;
     vertical-align: middle;
     cursor: pointer;
 }
