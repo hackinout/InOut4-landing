@@ -381,7 +381,10 @@ footer {
             background-position : calc(100% + 5em) calc(100%);
     }
 }
-@media (min-width: 1700px) {
+@media (min-width: 1500px) {
+    input[type="email"] {
+        max-width: 45%;
+    }
     .about-heading {
         font-size: 1.5vw;
     }
