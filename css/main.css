@@ -350,7 +350,8 @@ footer {
         margin-left: 15% !important;
     }
     .footer-social {
-        margin-left: 43% !important;
+     margin-left: 27%;
+     text-align: right;
     }
     .about-content {
         margin-left: calc(7vmax);
