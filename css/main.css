@@ -343,11 +343,14 @@ footer {
 }
 
 @media (min-width: 992px) {
+    .section-heading {
+        margin-bottom: 0.8em;
+    }
     .text-footer {
         margin-left: 15% !important;
     }
     .footer-social {
-        margin-left: 48% !important;
+        margin-left: 43% !important;
     }
     .about-content {
         margin-left: calc(7vmax);
