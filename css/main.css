@@ -51,7 +51,7 @@ header {
 .error {
     font-size:20px;
     margin-top: 15px;
-    color: darkred;
+    color: #ff8282;
 }
 .error a {
     color: #00FFC2
