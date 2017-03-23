@@ -48,18 +48,10 @@ header {
     color: #FFFFFF;
 }
 /* form styling */
-.error {
+
+#subscribe-result p {
     font-size:20px;
     margin-top: 15px;
-    color: #ff8282;
-}
-.error a {
-    color: #00FFC2
-}
-.success {
-    font-size: 20px;
-    margin-top:15px;
-    color: #C0D1FF;
 }
 
 /* Newsletter form*/

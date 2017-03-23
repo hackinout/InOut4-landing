@@ -68,11 +68,16 @@ function register($form) {
             if (data.result != "success") {
                 // Something went wrong, do something to notify the user.
 				console.log(data.msg);
-				$( ".error" ).html( "<p>" + data.msg.substring(4) + "</p>" );
-				$('.success').hide();
+                $("#mce-EMAIL").css("borderColor","#ff8282")
+                $("#subscribe-result").css("color","#ff8282")
+                $("#subscribe-result").html("<p>" + data.msg.substring(4) + "</p>");
             } else {
-				$('.error').hide();
-				$( ".success" ).html( "<p>We have sent you a confirmation email</p>" );
+                // Yeahhhh Success
+				console.log(data.msg);
+                $("#mce-EMAIL").css("borderColor","#ffffff")
+                $("#subscribe-result").css("color","#ffffff")
+                $("#subscribe-result").html("<p>Thank you for subscribing. We have sent you a confirmation email.</p>");
+                $("#mce-EMAIL").val("");
             }
         }
     });
