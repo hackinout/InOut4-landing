@@ -1,174 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>InOut 4.0</title>
-        <meta property="fb:app_id" content=""/>
-        <meta property="og:title" content="">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="">
-        <meta property="og:url" content="https://hackinout.co">
-        <meta property="og:description" content="">
-        <meta name="description" content="">
-        <meta name="keywords" content="hackathon, hackathon india, InOut, India, InOut svnit, svnit surat, nit surat, hackathon, gujarat, technology, startups, innovation, hacks"/>
-        <meta name="author" content="InOut"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="theme-color" content="#ffffff">
-        <meta http-equiv="cache-control" content="public"/>
-        <meta http-equiv="expires" content="Fri, 10 June 2017, 00:00:00 GMT"/>
-        <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-        <link rel="manifest" href="/static/inout/images/manifest.json">
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/main.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InOut 4.0</title>
+    <meta property="fb:app_id" content="" />
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://hackinout.co">
+    <meta property="og:description" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="hackathon, hackathon india, InOut, India, InOut svnit, svnit surat, nit surat, hackathon, gujarat, technology, startups, innovation, hacks"
+    />
+    <meta name="author" content="InOut" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="cache-control" content="public" />
+    <meta http-equiv="expires" content="Fri, 10 June 2017, 00:00:00 GMT" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/static/inout/images/manifest.json">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
-        <div id="play-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content embed-responsive embed-responsive-16by9">
-                    <iframe id="video" src="https://www.youtube.com/embed/SzmioR4Dj8E" frameborder="0" allowfullscreen></iframe>
-                </div>
+</head>
+
+<body>
+    <div id="play-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content embed-responsive embed-responsive-16by9">
+                <iframe id="video" src="https://www.youtube.com/embed/SzmioR4Dj8E" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-lg-offset-1 col-md-10 col-sm-10 col-sm-offset-1">
-                        <img class="header-logo" src="img/logo_header.svg" />
-                        <h1 class="header-content">Be ready, </br> we are <span class="text-color">coming soon.</span>
+    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-1 col-md-10 col-sm-10 col-sm-offset-1">
+                    <img class="header-logo" src="img/logo_header.svg" />
+                    <h1 class="header-content">Be ready, </br> we are <span class="text-color">coming soon.</span>
                         </br>
                         <span class="location">
                             BENGALURU, 2017
                         </span>
-                        </h1>
+                    </h1>
+                </div>
+                <!-- Begin MailChimp Signup Form -->
+                <div class="feedback col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-1">
+                    <form action="http://hackinout.us15.list-manage.com/subscribe/post-json?u=e44c1f194bec93e238615469e&amp;id=f6f826e769&c=?"
+                        method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="lovely-human@example.com" required>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+                        </div>
+                        <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+                </div>
+            </div>
+            <div id="subscribe-result" class="col-md-4 col-md-offset-1">
+            </div>
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
+        </div>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 about-container">
+                    <div class="col-lg-8 col-md-10 col-md-offset-2 about-content">
+                        <h1 class="about-heading">August 2016 Aftermovie</h1>
+                        <p class="section-lead">Here is what
+                            <br> you can expect from hackinout 4.</p>
+                        <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipo commodi officia am non
+                            illo voluptatem quae delectus odit vel itaque amet.</p>
                     </div>
-                    <!-- Begin MailChimp Signup Form -->
-                    <div class="feedback col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-1">
-                        <form action="http://hackinout.us15.list-manage.com/subscribe/post-json?u=e44c1f194bec93e238615469e&amp;id=f6f826e769&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="lovely-human@example.com" required>
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
-                            </div>
-                            <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+                </div>
+                <div class="col-lg-6 col-md-6 video-container" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <a href="" id="play-video">
+                        <img src="img/yt-video.jpg" id="play-video-bg" class="img-responsive">
+                        <img src="img/watch-video.svg" class="play-button img-responsive">
+                    </a>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Sponsor Section -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-sm-10 col-sm-offset-1">
+                    <h1 class="section-heading">Past year sponsor's</h1>
+                    <img class="sponsors-img" src="img/sponsors.png" />
+                </div>
+            </div>
+        </div </section>
+        <!-- Give us money-->
+        <section class="money">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <h1 class="">Intrested in becoming this year sponors</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="">Shoot us email at
+                            <button type="button" class="btn btn-success"><span class="sponsor-mail">sponors@hackinout.co</span></button>
+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="col-md-5 text-footer">
+                            <p class="footer-text">
+                                <img src="img/icon-code.svg"></img>
+                                with
+                                <img src="img/icon-heart.svg"></img>
+                                at
+                                <a href="https://github.com/hackinout" target="_blank" title="InOut on GitHub">
+                                    <img class="inout-logo" src="img/logo_footer.svg" />
+                                </a>
+                            </p>
                         </div>
                     </div>
-                    <div id="subscribe-result" class="col-md-4 col-md-offset-1">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="col-md-7 footer-social">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://twitter.com/hackinoutco" class="btn-social btn-outline">
+                                        <div class="inout-twitter inout-social"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/hackinout/" class="btn-social btn-outline">
+                                        <div class="inout-facebook inout-social"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/hack-inout" class="btn-social btn-outline">
+                                        <div class="inout-linkedin inout-social"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/hackinout.official/" class="btn-social btn-outline">
+                                        <div class="inout-instagram inout-social"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </form>
-            </div>
-            <!--End mc_embed_signup-->
-        </div>
-    </div>
-</header>
-<!-- About Section -->
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 about-container">
-                <div class="col-lg-8 col-md-10 col-md-offset-2 about-content">
-                    <h1 class="about-heading">August 2016 Aftermovie</h1>
-                    <p class="section-lead">Here is what
-                    <br> you can expect from hackinout 4.</p>
-                    <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipo commodi officia am non illo voluptatem quae delectus odit vel itaque amet.</p>
                 </div>
+                <!-- /.row -->
             </div>
-            <div class="col-lg-6 col-md-6 video-container" data-toggle="modal" data-target=".bs-example-modal-lg">
-                <a href="" id="play-video">
-                    <img src="img/yt-video.jpg" id="play-video-bg" class="img-responsive">
-                    <img src="img/watch-video.svg" class="play-button img-responsive">
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</section>
-<!-- Sponsor Section -->
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-sm-10 col-sm-offset-1">
-                <h1 class="section-heading">Past year sponsor's</h1>
-                <img class="sponsors-img" src="img/sponsors.png" />
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Footer -->
-<footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <div class="col-md-5 text-footer">
-                    <p class="footer-text">
-                        <img src="img/icon-code.svg"></img>
-                        with
-                        <img src="img/icon-heart.svg"></img>
-                        at
-                        <a href="https://github.com/hackinout" target="_blank" title="InOut on GitHub">
-                            <img class="inout-logo" src="img/logo_footer.svg" />
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <div class="col-md-7 footer-social">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://twitter.com/hackinoutco" class="btn-social btn-outline">
-                                <div class="inout-twitter inout-social"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/hackinout/" class="btn-social btn-outline">
-                                <div class="inout-facebook inout-social"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/hack-inout" class="btn-social btn-outline">
-                                <div class="inout-linkedin inout-social"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/hackinout.official/" class="btn-social btn-outline">
-                                <div class="inout-instagram inout-social"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</footer>
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<!-- Bootstrap Modal JavaScript -->
-<script src="js/bootstrap-modal.min.js"></script>
- <!-- Custom JavaScript -->
-<script src="js/main.js">
-</script>
+            <!-- /.container -->
+        </footer>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Modal JavaScript -->
+        <script src="js/bootstrap-modal.min.js"></script>
+        <!-- Custom JavaScript -->
+        <script src="js/main.js">
+
+        </script>
 </body>
+
 </html>
