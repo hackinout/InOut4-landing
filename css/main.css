@@ -313,6 +313,12 @@ footer {
     margin-top: 92px;
     color: #ffffff
 }
+.sponsor-mail a {
+    text-decoration: none;
+}
+.sponsor-mail a:hover {
+    text-decoration: none;
+}
 .btn-success {
     font-size: 20px;
     font-family: 'Rajdhani-Semibold';
@@ -320,6 +326,9 @@ footer {
     color: #3a3a62;
     padding: 10px 46px;
     box-shadow: 0px 7px 42px -1px rgba(0, 0, 0, 0.1);
+}
+.btn-success:hover {
+    background-color: #00FFC2;
 }
 /* Responsiveness */
 
