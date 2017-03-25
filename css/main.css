@@ -15,7 +15,7 @@ body {
 /* header */
 
 header {
-    height: 700px;
+    height: 100vh;
     background-color: #5252DB;
     min-height: auto;
     -webkit-background-size: cover;
@@ -380,6 +380,9 @@ footer {
 }
 
 @media (min-width: 992px) {
+    .header {
+        height: 100vh;
+    }
     .section-heading {
         margin-bottom: 0.8em;
     }
