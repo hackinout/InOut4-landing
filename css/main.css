@@ -411,6 +411,13 @@ footer {
          position: relative;
          bottom: 2em;
     }
+    .money p {
+        text-align: center;
+        margin-top: 26px;
+    }
+    .money h1 {
+        text-align: center;
+    }
 }
 @media (min-width: 1920px) {
     header {
