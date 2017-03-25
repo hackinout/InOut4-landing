@@ -32,10 +32,8 @@ console.log("windowHeight:", windowHeight)
 $(document).ready(function () {
 	var url = $("#video")[0].src
 	$('#play-video').on('click', function (ev) {
-
 		$("#video")[0].src = url + "?autoplay=1";
 		ev.preventDefault();
-
 	});
 	$("#play-modal").on('hidden.bs.modal', function (e) {
 		$("#play-modal iframe").attr("src", url);
