@@ -391,6 +391,22 @@ footer {
         left: 7em;
         width: 60px;
     }
+    .btn-success {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:500px) {
+    .btn-success {
+        margin-top: 0.5em;
+    }
+    .money h1 {
+        font-size: 17px;
+    }
+    .money p {
+        margin-top: 5px !important;
+        font-size: 15px;
+    }
 }
 
 
@@ -480,7 +496,7 @@ footer {
         margin-top: 50px;
     }
     .money {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }
 
