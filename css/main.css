@@ -12,6 +12,7 @@ body {
     font-family: 'Rajdhani-Regular', sans-serif;
 }
 
+
 /* header */
 
 header {
@@ -26,8 +27,9 @@ header {
     background-position: calc(100% + 326px) calc(100%);
     background-image: url(../img/header.png);
 }
+
 .header-logo {
-    margin-top:100px;
+    margin-top: 100px;
     margin-bottom: 111px;
     margin-left: calc(-1vmin);
     width: auto;
@@ -35,7 +37,7 @@ header {
 }
 
 .location {
-    font-size:18px;
+    font-size: 18px;
     line-height: 23px;
 }
 
@@ -47,12 +49,15 @@ header {
     line-height: 58px;
     color: #FFFFFF;
 }
+
+
 /* form styling */
 
 #subscribe-result p {
-    font-size:20px;
+    font-size: 20px;
     margin-top: 15px;
 }
+
 
 /* Newsletter form*/
 
@@ -101,25 +106,34 @@ input[type=submit]::focus {
 }
 
 input:focus {
-    border-color:#00FFC2;
+    border-color: #00FFC2;
     box-shadow: 0px 0px 8px 2px rgba(53, 114, 210, .5);
     outline: none;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #FFFFFF;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #FFFFFF;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #FFFFFF;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: #FFFFFF;
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #C0D1FF;
 }
 
- /*section*/
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #C0D1FF;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #C0D1FF;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #C0D1FF;
+}
+
+
+/*section*/
+
 .section-heading {
     text-transform: uppercase;
     font-family: Rajdhani-Semibold;
@@ -140,14 +154,17 @@ section {
     font-family: "Rajdhani-Semibold"
 }
 
+
 /*sponsor styling*/
+
 .sponsors-img {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
 
 /* About styling */
+
 .about-container {
     background: #3A3A62;
     padding: 60px 20px;
@@ -169,7 +186,7 @@ section {
     font-family: "Rajdhani-Semibold";
     line-height: 1.2em;
     text-transform: uppercase;
-    color:#00FFC2;
+    color: #00FFC2;
 }
 
 .section-paragraph {
@@ -181,16 +198,17 @@ section {
 .video-container {
     padding: 0;
 }
+
 #play-video-bg {
-    width:100%;
+    width: 100%;
 }
 
-.play-button{
+.play-button {
     position: relative;
     bottom: 12em;
     left: 8em;
     width: 80px;
-    -webkit-transition:transform 0.5s;
+    -webkit-transition: transform 0.5s;
     -moz-transition: transform 0.5s;
     transition: transform 0.5s;
 }
@@ -203,7 +221,9 @@ iframe {
     padding: 0
 }
 
+
 /* about end */
+
 
 /* footer styling */
 
@@ -216,11 +236,12 @@ footer {
 .footer-text {
     display: inline-block;
     font-family: Rajdhani-Semibold;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 500;
     color: #8B8BAE;
     line-height: 1.9em;
 }
+
 .fa {
     vertical-align: middle !important;
 }
@@ -255,12 +276,14 @@ footer {
     background-size: contain;
     height: 40px;
 }
+
 .inout-social:hover {
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
 }
+
 .inout-twitter {
     background-image: url('../img/inout-twitter.svg');
 }
@@ -293,34 +316,42 @@ footer {
     background-image: url('../img/inout-facebook-hover.svg');
 }
 
+
 /* youtube video modal */
+
 .modal-lg {
-        width: 90%;
+    width: 90%;
 }
+
 .money {
-    background-color:#5252DB;
+    background-color: #5252DB;
     margin-top: 100px;
 }
+
 .money h1 {
     margin-top: 100px;
     text-transform: uppercase;
     color: #00FFC2;
     font-size: 25px;
 }
+
 .money p {
     font-size: 15px;
     text-align: right;
     text-transform: uppercase;
     margin-top: 92px;
-    color: #ffffff
+    color: #C0D1FF;
 }
+
 .sponsor-mail a {
     text-decoration: none;
     color: #3A3A62;
 }
+
 .sponsor-mail a:hover {
     text-decoration: none;
 }
+
 .btn-success {
     font-size: 20px;
     font-family: 'Rajdhani-Semibold';
@@ -329,54 +360,65 @@ footer {
     padding: 10px 46px;
     margin-left: 0.5em;
 }
+
 .btn-success:hover {
     background-color: #00FFC2;
     box-shadow: none;
 }
+
+
 /* Responsiveness */
 
+
 /* mobile */
+
+
 /* Mobile type - small */
+
 @media(max-width:375px) {
     input[type="submit"] {
         margin-left: 0px;
     }
     .mc-button {
-        width:75%;
+        width: 75%;
         display: block;
     }
 }
+
 @media(max-width:320px) {
     .play-button {
-    bottom: 10em;
-    left: 7em;
-    width: 60px;
+        bottom: 10em;
+        left: 7em;
+        width: 60px;
     }
 }
+
+
 /* No greater than 500px, no less than 300px */
+
 @media(max-width:500px) and (min-width:300px) {
     header {
-         background-position: calc(100% + 37vw) calc(100%);
+        background-position: calc(100% + 37vw) calc(100%);
     }
     .header-content {
         font-size: 3.375em;
     }
     .header-logo {
-        margin-top:50px;
+        margin-top: 50px;
         margin-bottom: 80px;
     }
 }
 
 @media(max-width:992px) and (min-width:768px) {
-.about-content {
-    margin-left: calc(7vmax);
+    .about-content {
+        margin-left: calc(7vmax);
+    }
 }
-}
+
 @media(max-width:768px) {
     section {
         padding-bottom: 25px;
     }
-
     .section-heading {
         font-size: 2em;
     }
@@ -393,25 +435,26 @@ footer {
         margin-left: 15% !important;
     }
     .footer-social {
-     margin-left: 27%;
-     text-align: right;
+        margin-left: 27%;
+        text-align: right;
     }
     .about-content {
         margin-left: calc(7vmax);
     }
     input {
-        font-size:20px;
+        font-size: 20px;
     }
     input[type="submit"] {
-            vertical-align: bottom;
+        vertical-align: bottom;
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
     .section-heading {
         margin-top: -90px;
     }
-    .list-inline, .text-footer {
+    .list-inline,
+    .text-footer {
         text-align: center;
     }
     .about-container {
@@ -425,8 +468,8 @@ footer {
         top: 8em;
     }
     .footer-social {
-         position: relative;
-         bottom: 2em;
+        position: relative;
+        bottom: 2em;
     }
     .money p {
         text-align: center;
@@ -440,11 +483,13 @@ footer {
         margin-top: 50px;
     }
 }
+
 @media (min-width: 1920px) {
     header {
-            background-position : calc(100% + 5em) calc(100%);
+        background-position: calc(100% + 5em) calc(100%);
     }
 }
+
 @media (min-width: 1500px) {
     input[type="email"] {
         max-width: 45%;
@@ -454,8 +499,8 @@ footer {
     }
     .section-lead {
         font-size: 3vw;
-     }
-     .section-paragraph {
-         font-size: 2vw;
-     }
+    }
+    .section-paragraph {
+        font-size: 2vw;
+    }
 }
