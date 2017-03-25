@@ -316,6 +316,7 @@ footer {
     font-size: 20px;
     font-family: 'Rajdhani-Semibold';
     background-color: #00FFC2;
+    color: #3a3a62;
     padding: 10px 46px;
     box-shadow: 0px 7px 42px -1px rgba(0, 0, 0, 0.1);
 }
@@ -417,6 +418,7 @@ footer {
     }
     .money h1 {
         text-align: center;
+        margin-top: 50px;
     }
 }
 @media (min-width: 1920px) {
