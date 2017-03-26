@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Rajdhani-Semibold';
-    src: url('../fonts/Rajdhani-SemiBold.ttf');
+    src: url('../assets/fonts/Rajdhani-SemiBold.ttf');
 }
 
 @font-face {
     font-family: 'Rajdhani-Regular';
-    src: url('../fonts/Rajdhani-Regular.ttf');
+    src: url('../assets/fonts/Rajdhani-Regular.ttf');
 }
 
 body {
@@ -25,7 +25,7 @@ header {
     background-repeat: no-repeat;
     -o-background-size: cover;
     background-position: calc(100% + 326px) calc(100%);
-    background-image: url(../img/header.png);
+    background-image: url(../assets/img/header.png);
 }
 
 .header-logo {
@@ -285,35 +285,35 @@ footer {
 }
 
 .inout-twitter {
-    background-image: url('../img/inout-twitter.svg');
+    background-image: url('../assets/img/inout-twitter.svg');
 }
 
 .inout-twitter:hover {
-    background-image: url('../img/inout-twitter-hover.svg');
+    background-image: url('../assets/img/inout-twitter-hover.svg');
 }
 
 .inout-linkedin {
-    background-image: url('../img/inout-linkedin.svg');
+    background-image: url('../assets/img/inout-linkedin.svg');
 }
 
 .inout-linkedin:hover {
-    background-image: url('../img/inout-linkedin-hover.svg');
+    background-image: url('../assets/img/inout-linkedin-hover.svg');
 }
 
 .inout-instagram {
-    background-image: url('../img/inout-instagram.svg');
+    background-image: url('../assets/img/inout-instagram.svg');
 }
 
 .inout-instagram:hover {
-    background-image: url('../img/inout-instagram-hover.svg');
+    background-image: url('../assets/img/inout-instagram-hover.svg');
 }
 
 .inout-facebook {
-    background-image: url('../img/inout-facebook.svg');
+    background-image: url('../assets/img/inout-facebook.svg');
 }
 
 .inout-facebook:hover {
-    background-image: url('../img/inout-facebook-hover.svg');
+    background-image: url('../assets/img/inout-facebook-hover.svg');
 }
 
 
