@@ -339,7 +339,7 @@ footer {
     font-size: 15px;
     text-align: right;
     text-transform: uppercase;
-    margin-top: 92px;
+    margin-top: 88px;
     color: #C0D1FF;
 }
 
@@ -359,11 +359,20 @@ footer {
     color: #3a3a62;
     padding: 10px 46px;
     margin-left: 0.5em;
+    box-shadow: 0px 5px 8px 0px rgba(34, 34, 34, 0.2);
+    border-color: #00FFC2;
+    transition: all 0.5s ease;
 }
 
-.btn-success:hover {
-    background-color: #00FFC2;
-    box-shadow: none;
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active:hover,
+.btn-success:active:focus {
+    background-color: #03e6b0;
+    box-shadow: 0px 5px 8px 5px rgba(34, 34, 34, 0.2);
+    border-color: #03e6b0;
+    /*transform: translateY(-1px);*/
+    transition: all 0.2s ease-in;
 }
 
 
