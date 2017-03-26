@@ -2,7 +2,6 @@
 var gulp = require('gulp')
 var browserSync = require('browser-sync').create()
 var reload = browserSync.reload
-// var nodemon = require('gulp-nodemon')
 var concat = require('gulp-concat')
 var minify = require('gulp-minify')
 var cleanCss = require('gulp-clean-css')
@@ -12,6 +11,7 @@ var del = require('del')
 var uncss = require('gulp-uncss')
 var uglify = require('gulp-uglify')
 var pump = require('pump')
+var imagemin = require('gulp-imagemin')
 
 // Default Gulp task to run including all necessary dependencies
 gulp.task('default', ['browser-sync', 'build'], function () {
@@ -40,7 +40,7 @@ gulp.task('browser-sync', function () {
 
 // Build task to initiate minify tasks for CSS and JS
 gulp.task('build', ['minify-html', 'pack-minify-js', 'pack-minify-css', 'gulp-uncss',
-  'copy-assets'
+  'copy-assets', 'image-optim'
 ])
 
 // Task to minify HTML
@@ -49,19 +49,6 @@ gulp.task('minify-html', function () {
     .pipe(htmlmin())
     .pipe(gulp.dest('public/'))
 })
-
-// Task to minify JS
-// gulp.task('pack-minify-js', function () {
-//   return gulp.src(['source/js/*.js', '!source/js/*.min.js'])
-//     // .pipe(concat('main.js'))
-//     .pipe(minify({
-//       ext: {
-//         min: '.min.js'
-//       },
-//       noSource: true
-//     }))
-//     .pipe(gulp.dest('./public/js'))
-// })
 
 // Task to uglify JS
 gulp.task('pack-minify-js', function (cb) {
@@ -101,10 +88,16 @@ gulp.task('gulp-uncss', function () {
     .pipe(gulp.dest('public/css'))
 })
 
-// Task to copy assets
+gulp.task('image-optim', function () {
+  return gulp.src('source/assets/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('public/assets/img'))
+})
+
+// // Task to copy assets
 gulp.task('copy-assets', function () {
-  return gulp.src('source/assets/**/*')
-    .pipe(gulp.dest('public/assets'))
+  return gulp.src('source/assets/fonts/*')
+    .pipe(gulp.dest('public/assets/fonts'))
 })
 
 // Task to delete target assets folder for recreation

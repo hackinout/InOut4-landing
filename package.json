@@ -30,6 +30,7 @@
     "gulp-clean-css": "^3.0.4",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
     "gulp-minify": "^0.0.15",
     "gulp-nodemon": "^2.2.1",
     "gulp-rename": "^1.2.2",
