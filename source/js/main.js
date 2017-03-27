@@ -30,7 +30,7 @@ console.log("windowWidth:", windowWidth)
 console.log("windowHeight:", windowHeight)
 
 $(document).ready(function () {
-    var url = $("#video")[0].src
+    var url = 'https://www.youtube.com/embed/SzmioR4Dj8E'
     $('#play-video').on('click', function (ev) {
         $("#video")[0].src = url + "?autoplay=1";
         ev.preventDefault();
