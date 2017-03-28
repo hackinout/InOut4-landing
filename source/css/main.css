@@ -195,26 +195,63 @@ section {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.video-container {
-    padding: 0;
-}
-
 #play-video-bg {
     width: 100%;
 }
 
+.flex{
+    display: flex;
+    flex-flow: row;
+}
+
+.flex > div {
+    width: 50%;
+    align-items: stretch;
+}
+
+#play-video-bg{
+    /*display: none;
+    width: 0;
+    height: 0;*/
+}
+
+.video-container {
+    padding: 0;
+    background-image: url('../assets/img/yt-video.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
 .play-button {
-    position: relative;
-    bottom: 12em;
-    left: 8em;
-    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
     -webkit-transition: transform 0.5s;
     -moz-transition: transform 0.5s;
     transition: transform 0.5s;
 }
 
+@media (max-width: 992px) {
+    .video-container{
+        /*min-height: 500px;*/
+    }
+
+    .play{
+        width: 100%;
+        height: 100vw;
+    }
+    /*.play-button{
+        padding-top: 50%;
+    }*/
+}
+
 .scale {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
+    transform:  scale(1.1) translate(-50%, -50%)
 }
 
 iframe {
@@ -535,4 +572,8 @@ footer {
     .section-paragraph {
         font-size: 2vw;
     }
+}
+
+.sponsor-heading{
+    margin-top: 0.1em !important;
 }
