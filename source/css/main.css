@@ -12,6 +12,9 @@ body {
     font-family: 'Rajdhani-Regular', sans-serif;
 }
 
+iframe {
+    padding: 0
+}
 
 /* header */
 
@@ -155,29 +158,21 @@ section {
 }
 
 
-/*sponsor styling*/
+/* Sponsor styling */
 
 .sponsors-img {
     width: 100%;
     height: 100%;
 }
 
-
+.sponsor-heading {
+    margin-top: 0.1em !important;
+}
 /* About styling */
 
 .about-container {
     background: #3A3A62;
     padding: 60px 20px;
-}
-
-.about-heading {
-    /*margin-top: 90px;*/
-    font-family: "Rajdhani-Semibold";
-    text-transform: uppercase;
-    font-size: 1.5em;
-    line-height: 1.875em;
-    font-weight: bold;
-    color: #FFFFFF;
 }
 
 .section-lead {
@@ -209,12 +204,6 @@ section {
     align-items: stretch;
 }
 
-#play-video-bg{
-    /*display: none;
-    width: 0;
-    height: 0;*/
-}
-
 .video-container {
     padding: 0;
     background-image: url('../assets/img/yt-video.jpg');
@@ -236,33 +225,19 @@ section {
 }
 
 @media (max-width: 992px) {
-    .video-container{
-        /*min-height: 500px;*/
-    }
-
     .play{
         width: 100%;
         height: 100vw;
     }
-    /*.play-button{
-        padding-top: 50%;
-    }*/
 }
 
 .scale {
-    /*transform: scale(1.1);*/
     transform:  scale(1.1) translate(-50%, -50%)
 }
 
-iframe {
-    padding: 0
-}
+/* About end */
 
-
-/* about end */
-
-
-/* footer styling */
+/* Footer styling */
 
 footer {
     padding-top: 80px;
@@ -277,10 +252,6 @@ footer {
     font-weight: 500;
     color: #8B8BAE;
     line-height: 1.9em;
-}
-
-.fa {
-    vertical-align: middle !important;
 }
 
 .inout-logo {
@@ -312,7 +283,6 @@ footer {
     height: 0;
     display: none;
 }
-
 
 .inout-social {
     background-repeat: no-repeat;
@@ -415,15 +385,13 @@ footer {
     background-color: #03e6b0;
     box-shadow: 0px 5px 8px 5px rgba(34, 34, 34, 0.2);
     border-color: #03e6b0;
-    /*transform: translateY(-1px);*/
     transition: all 0.2s ease-in;
 }
-
 
 /* Responsiveness */
 
 
-/* mobile */
+/* Mobile */
 
 
 /* Mobile type - small */
@@ -461,7 +429,6 @@ footer {
         font-size: 15px;
     }
 }
-
 
 /* No greater than 500px, no less than 300px */
 
@@ -553,18 +520,11 @@ footer {
     }
 }
 
-@media (min-width: 1920px) {
-    header {
-        background-position: calc(100% + 5em) calc(100%);
-    }
-}
+ /* Desktop and laptop */
 
 @media (min-width: 1500px) {
     input[type="email"] {
         max-width: 45%;
-    }
-    .about-heading {
-        font-size: 1.5vw;
     }
     .section-lead {
         font-size: 3vw;
@@ -574,6 +534,9 @@ footer {
     }
 }
 
-.sponsor-heading{
-    margin-top: 0.1em !important;
+@media (min-width: 1920px) {
+    header {
+        background-position: calc(100% + 5em) calc(100%);
+    }
 }
+
