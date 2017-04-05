@@ -46,7 +46,7 @@ gulp.task('build', ['minify-html', 'pack-minify-js', 'pack-minify-css', 'gulp-un
 // Task to minify HTML
 gulp.task('minify-html', function () {
   return gulp.src('source/*.html')
-    .pipe(htmlmin())
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('public/'))
 })
 
