@@ -279,7 +279,8 @@ footer {
 
 .hidden-icons::before{
     content: url('../assets/img/inout-twitter-hover.svg') url('../assets/img/inout-linkedin-hover.svg')
-             url('../assets/img/inout-instagram-hover.svg') url('../assets/img/inout-facebook-hover.svg');
+             url('../assets/img/inout-instagram-hover.svg') url('../assets/img/inout-facebook-hover.svg')
+             url('../assets/img/inout-slack-hover.svg');
     height: 0;
     display: none;
 }
@@ -329,6 +330,14 @@ footer {
 
 .inout-facebook:hover {
     background-image: url('../assets/img/inout-facebook-hover.svg');
+}
+
+.inout-slack {
+    background-image: url('../assets/img/inout-slack.svg');
+}
+
+.inout-slack:hover {
+    background-image: url('../assets/img/inout-slack-hover.svg');
 }
 
 /* youtube video modal */
