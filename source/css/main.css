@@ -16,6 +16,7 @@ iframe {
     padding: 0
 }
 
+
 /* header */
 
 header {
@@ -168,6 +169,8 @@ section {
 .sponsor-heading {
     margin-top: 0.1em !important;
 }
+
+
 /* About styling */
 
 .about-container {
@@ -194,12 +197,12 @@ section {
     width: 100%;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-flow: row;
 }
 
-.flex > div {
+.flex>div {
     width: 50%;
     align-items: stretch;
 }
@@ -225,17 +228,19 @@ section {
 }
 
 @media (max-width: 992px) {
-    .play{
+    .play {
         width: 100%;
         height: 100vw;
     }
 }
 
 .scale {
-    transform:  scale(1.1) translate(-50%, -50%)
+    transform: scale(1.1) translate(-50%, -50%)
 }
 
+
 /* About end */
+
 
 /* Footer styling */
 
@@ -277,10 +282,8 @@ footer {
     margin-left: 10px;
 }
 
-.hidden-icons::before{
-    content: url('../assets/img/inout-twitter-hover.svg') url('../assets/img/inout-linkedin-hover.svg')
-             url('../assets/img/inout-instagram-hover.svg') url('../assets/img/inout-facebook-hover.svg')
-             url('../assets/img/inout-slack-hover.svg');
+.hidden-icons::before {
+    content: url('../assets/img/inout-twitter-hover.svg') url('../assets/img/inout-linkedin-hover.svg') url('../assets/img/inout-instagram-hover.svg') url('../assets/img/inout-facebook-hover.svg') url('../assets/img/inout-slack-hover.svg');
     height: 0;
     display: none;
 }
@@ -340,6 +343,7 @@ footer {
     background-image: url('../assets/img/inout-slack-hover.svg');
 }
 
+
 /* youtube video modal */
 
 .modal-lg {
@@ -397,6 +401,7 @@ footer {
     transition: all 0.2s ease-in;
 }
 
+
 /* Responsiveness */
 
 
@@ -439,6 +444,7 @@ footer {
     }
 }
 
+
 /* No greater than 500px, no less than 300px */
 
 @media(max-width:500px) and (min-width:300px) {
@@ -466,6 +472,10 @@ footer {
     }
     .section-heading {
         font-size: 2em;
+    }
+    .modal-dialog {
+        margin: 15px;
+        margin-top: 25vh;
     }
 }
 
@@ -529,7 +539,8 @@ footer {
     }
 }
 
- /* Desktop and laptop */
+
+/* Desktop and laptop */
 
 @media (min-width: 1500px) {
     input[type="email"] {
@@ -548,4 +559,3 @@ footer {
         background-position: calc(100% + 5em) calc(100%);
     }
 }
-
