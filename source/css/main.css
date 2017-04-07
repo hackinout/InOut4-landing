@@ -442,6 +442,9 @@ footer {
         margin-top: 5px !important;
         font-size: 15px;
     }
+    header {
+        height: 700px !important;
+    }
 }
 
 
@@ -452,7 +455,7 @@ footer {
         background-position: calc(100% + 37vw) calc(100%);
     }
     .header-content {
-        font-size: 3.375em;
+        font-size: 3em;
     }
     .header-logo {
         margin-top: 50px;
