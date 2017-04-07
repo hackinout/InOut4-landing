@@ -423,7 +423,7 @@ footer {
 @media(max-width:320px) {
     .play-button {
         bottom: 10em;
-        left: 7em;
+        left: 50vw;
         width: 60px;
     }
     .btn-success {
@@ -444,6 +444,9 @@ footer {
     }
     header {
         height: 700px !important;
+    }
+    .play-button {
+        width: 75px;
     }
 }
 
