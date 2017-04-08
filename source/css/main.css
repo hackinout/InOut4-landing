@@ -62,6 +62,9 @@ header {
     margin-top: 15px;
 }
 
+#subscribe-result a {
+    color: #00FFC2;
+}
 
 /* Newsletter form*/
 
@@ -93,7 +96,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-    margin-left: -110px;
+    margin-left: -108px;
     height: 44px;
     display: inline-block;
     vertical-align: middle;
