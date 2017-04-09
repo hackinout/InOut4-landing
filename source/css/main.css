@@ -565,3 +565,109 @@ footer {
         background-position: calc(100% + 5em) calc(100%);
     }
 }
+
+
+
+/*=============================================
+=            sponsor page            =
+=============================================*/
+
+.padding-top-120{
+    padding-top: 100px;
+}
+.sponsor--about{
+    background-image: url('../assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.sponsor--subheading{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.card{
+    /*max-width: 500px*/
+    margin-top: 20px;
+}
+
+.quote{
+    background-color: #00FFC2;
+    padding: 40px;
+}
+
+.arrowtip{
+    position: relative;
+    width: 0;
+    /*left: 40px;*/
+    bottom: -70px;
+    border-top: 12px solid #00FFC2;
+    border-right: 52px solid #00FFC2;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
+    /*transform: rotateZ(-180deg);*/
+}
+
+.quote p {
+    font-size: 22px;
+    padding-top: 16px;
+    /*font-style: italic;*/
+}
+
+.person{
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.profile-avatar{
+    border-radius: 50%;
+    vertical-align: text-bottom
+}
+
+.profile{
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px
+}
+.name{
+    font-family: Rajdhani-Semibold, sans-serif;
+    font-size: 18px;
+}
+
+.designation{
+    font-size: 14px;
+}
+
+.sponsor--coming{
+    background-color: #5252db;
+}
+
+.sponsor--sponsor-us{
+    background-color: #3a3a62;
+}
+
+.sponsor--past img{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.dark-heading{
+    color: #3a3a62
+}
+
+.sponsor--form{
+    background-color: #5252db;
+    text-align: center;
+}
+
+.subtitle{
+    color: #fff;
+    font-size: 1.375em;
+}
+
+.short-heading{
+    font-size: 2.375em;
+}
+/*=====  End of sponsor page  ======*/
+

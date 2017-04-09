@@ -15,10 +15,10 @@ var imagemin = require('gulp-imagemin')
 
 // Default Gulp task to run including all necessary dependencies
 gulp.task('default', ['browser-sync', 'build'], function () {
-  gulp.watch(['source/*.html', 'source/js/*.js',
+  gulp.watch(['source/**/*.html', 'source/js/*.js',
     'source/css/*.css'
   ], ['build'])
-  gulp.watch(['public/*.html', 'public/js/*.js',
+  gulp.watch(['public/**/*.html', 'public/js/*.js',
     'public/css/*.css'
   ], reload)
 })
@@ -40,7 +40,7 @@ gulp.task('browser-sync', function () {
 
 // Build task to initiate minify tasks for CSS and JS
 gulp.task('build', ['minify-html', 'pack-minify-js', 'pack-minify-css', 'gulp-uncss',
-  'copy-assets', 'image-optim'
+  'copy-sponsor', 'copy-fonts', 'image-optim'
 ])
 
 // Task to minify HTML
@@ -95,7 +95,13 @@ gulp.task('image-optim', function () {
 })
 
 // // Task to copy assets
-gulp.task('copy-assets', function () {
+gulp.task('copy-sponsor', function () {
+  return gulp.src('source/sponsor/*')
+    .pipe(gulp.dest('public/sponsor'))
+})
+
+// // Task to copy assets
+gulp.task('copy-fonts', function () {
   return gulp.src('source/assets/fonts/*')
     .pipe(gulp.dest('public/assets/fonts'))
 })
