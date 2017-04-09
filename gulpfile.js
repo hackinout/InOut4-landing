@@ -40,7 +40,7 @@ gulp.task('browser-sync', function () {
 
 // Build task to initiate minify tasks for CSS and JS
 gulp.task('build', ['minify-html', 'pack-minify-js', 'pack-minify-css', 'gulp-uncss',
-  'copy-sponsor', 'copy-fonts', 'image-optim'
+  'copy-sponsor', 'copy-fonts', 'copy-css', 'image-optim'
 ])
 
 // Task to minify HTML
@@ -104,6 +104,11 @@ gulp.task('copy-sponsor', function () {
 gulp.task('copy-fonts', function () {
   return gulp.src('source/assets/fonts/*')
     .pipe(gulp.dest('public/assets/fonts'))
+})
+
+gulp.task('copy-css', function () {
+  return gulp.src('source/css/*.min.css')
+    .pipe(gulp.dest('public/css'))
 })
 
 // Task to delete target assets folder for recreation
