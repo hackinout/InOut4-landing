@@ -672,5 +672,27 @@ footer {
 .short-heading{
     font-size: 2.375em;
 }
+
+.sponsorship-form{
+    
+}
+
+.sponsorship-form input{
+    width: 100%;
+    max-width: 100%;
+    background-color: #8787F7;
+    box-shadow: 0 12px 14px 0 rgba(0,0,0,0.13);
+    border-color: #8787F7;
+}
+
+.sponsorship-form input:hover{
+    border-color: #fff;
+}
+
+.sponsorship-form input:focus,
+.sponsorship-form input:active{
+    border-color: #00FFC2;
+}
+
 /*=====  End of sponsor page  ======*/
 
