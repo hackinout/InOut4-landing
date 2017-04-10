@@ -9,7 +9,8 @@
 
 .sponsor--header{
     /*background-position: right;*/
-    background-image: url(../assets/img/sponsor-header2.jpg);
+    background-image: url(../assets/img/sponsor-header.png);
+    background-position: 100% 0;
 }
 
 .sponsor--about{
@@ -201,6 +202,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
     font-family: 'Rajdhani', sans-serif;
 }
 
+.sponsor--icon{
+    /*max-width: 74px;*/
+}
+
+.icon-text{
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    top: 30px;
+}
+
 @media (min-width:1500px) {
     .sponsor-page .section-paragraph{
         font-size: 24px;
@@ -229,6 +242,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 @media (max-width:500px) {
     .padding-top-120{
         padding-top: 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .sponsor--header{
+        background-size: cover;
+        background-position: 30% 0;
     }
 }
 

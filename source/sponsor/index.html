@@ -40,10 +40,10 @@
   <meta name="msapplication-square150x150logo" content="../assets/img/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="../assets/img/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="../assets/img/mstile-310x310.png" />
-   <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani:600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
-    <!-- Custom CSS -->
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+  <!-- Custom CSS -->
   <link href="../css/sponsor.min.css" rel="stylesheet">
   <link href="../css/owl.carousel.min.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -166,9 +166,46 @@
           <span class="sponsor--subheading">why sponsor us</span>
           <h1 class="section-lead">here is what you can.</h1>
         </div>
-
-
-
+      </div>
+      <div class="row padding-top-120">
+        <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+          <div class="col-xs-5 col-md-4"><img class="sponsor--icon" src="../assets/img/point1.svg" alt="Icon for branding"></div>
+          <div class="col-xs-7 col-md-8 ">
+            <p class="icon-text">Brand recognition/branding or whatever</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+          <div class="col-xs-5 col-md-4"><img class="sponsor--icon" src="../assets/img/point2.svg" alt="Icon for branding"></div>
+          <div class="col-xs-7 col-md-8 ">
+            <p class="icon-text">Focus on education young developer and what not</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+          <div class="col-xs-5 col-md-4"><img class="sponsor--icon" src="../assets/img/point3.svg" alt="Icon for branding"></div>
+          <div class="col-xs-7 col-md-8 ">
+            <p class="icon-text">Dowload awesome developers</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+          <div class="col-xs-5 col-md-4"><img class="sponsor--icon" src="../assets/img/point4.svg" alt="Icon for branding"></div>
+          <div class="col-xs-7 col-md-8 ">
+            <p class="icon-text">Brand recognition/branding or whatever</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+          <div class="col-xs-5 col-md-4"><img class="sponsor--icon" src="../assets/img/point5.svg" alt="Icon for branding"></div>
+          <div class="col-xs-7 col-md-8 ">
+            <p class="icon-text">Focus on education young developer and what not</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
+          <div class="col-xs-5 col-md-4"><img class="sponsor--icon" src="../assets/img/point6.svg" alt="Icon for branding"></div>
+          <div class="col-xs-7 col-md-8 ">
+            <p class="icon-text">Dowload awesome developers</p>
+          </div>
+        </div>
+      </div>
+      <div class="row padding-top-120">
         <div class="col-lg-5">
           <div class="card">
             <div class="quote">
@@ -440,7 +477,7 @@
           success: function (data, xhr) {
             $('.sponsorship-form input').val("")
           },
-          error: function showError (e) {
+          error: function showError(e) {
             $('.sponsorship-form button').text('SUBMIT').attr("disabled", false)
             r = jQuery.parseJSON(e.responseText).message
             // $('.message')
@@ -449,17 +486,17 @@
             //     .text(r)
             return r
           },
-          complete: function(e) {
-            api_status =  e.status
+          complete: function (e) {
+            api_status = e.status
             r = jQuery.parseJSON(e.responseText).message
             console.log(r)
-            if (api_status === 201){
+            if (api_status === 201) {
               console.log('status:', api_status)
               $('.message')
                 .removeClass('hide has-error')
                 .text("Thanks! You'll be hearing from us soon.")
               $('.sponsorship-form button').text('SUBMITTED').attr("disabled", true)
-            } else if (api_status === 400){
+            } else if (api_status === 400) {
               console.log('status:', api_status)
               $('.message')
                 .removeClass('hide')
