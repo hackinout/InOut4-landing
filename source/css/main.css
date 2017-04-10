@@ -81,12 +81,15 @@ input[type="email"] {
     width: 75%;
     box-sizing: border-box;
     background: #5252db;
-    color: #FFFFFF;
+    font-family: 'Lato';
+    font-weight: 300;
+    color: #C0D1FF;
     height: 44px !important;
 }
 
 input[type="submit"] {
     margin-left: -108px;
+    font-family: 'Rajdhani';
     height: 44px;
     display: inline-block;
     vertical-align: middle;
@@ -94,7 +97,7 @@ input[type="submit"] {
     color: white;
     border: 0;
     -webkit-appearance: none;
-    font-weight: bold;
+    font-weight: 600;
     border: 1px solid transparent;
 }
 

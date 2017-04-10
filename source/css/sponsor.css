@@ -172,6 +172,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
     margin-bottom: 10px;
     height: 44px;
     color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 .sponsorship-form input:hover{
