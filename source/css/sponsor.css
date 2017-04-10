@@ -144,7 +144,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 }
 
 .subtitle{
-    color: #fff;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    color: #c0d1ff;
+    line-height: 1.575em;
     font-size: 1.375em;
 }
 
@@ -193,7 +196,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 }
 
 .has-error{
-    color: #FF8282 !important; 
+    color: #FF8282 !important;
 }
 
 .message{
