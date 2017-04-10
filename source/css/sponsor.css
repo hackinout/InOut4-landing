@@ -7,6 +7,10 @@
     padding-top: 100px;
 }
 
+.padding-top-44 {
+    padding-top: 44px;
+}
+
 .sponsor--header{
     /*background-position: right;*/
     background-image: url(../assets/img/sponsor-header.png);
@@ -184,6 +188,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 
 .btn-success{
     box-shadow: 0 12px 14px 0 rgba(0,0,0,0.13);
+    margin-top: 15px;
 }
 
 .btn-success:hover{
