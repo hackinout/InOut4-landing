@@ -40,7 +40,10 @@
   <meta name="msapplication-square150x150logo" content="../assets/img/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="../assets/img/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="../assets/img/mstile-310x310.png" />
-  <!-- Custom CSS -->
+   <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+    <!-- Custom CSS -->
   <link href="../css/sponsor.min.css" rel="stylesheet">
   <link href="../css/owl.carousel.min.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -120,7 +123,18 @@
   <section class="sponsor--coming container-fluid padding-top-120">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-5 col-lg-push-7">
+          <span class="sponsor--subheading">who is coming?</span>
+          <h1 class="section-lead">Hacker from<br>Another planet</h1>
+          <p class="section-paragraph">
+            Hackathons are communities based on learning, teaching, and creating. Thus our focus is to create a platform to facilitate
+            collaboration between sponsors and hackers, and enable great minds to join forces and create cool hacks. We’ll
+            be joined by many app developers, startup founders, engineers and …………. In addition, a hallmark of InOut is we
+            accept only the brightest of all applicants, (compared to last year’s 2000+ total applicants), who are chosen
+            based on their experience, contributions, ambition, demonstrated passion and aptitude for technology and innovation.
+          </p>
+        </div>
+        <div class="col-lg-5 col-lg-pull-5">
           <div class="card">
             <div class="quote">
               <img src="../assets/img/quote-twitter.svg" alt="Twitter logo">
@@ -138,17 +152,7 @@
           </div>
 
         </div>
-        <div class="col-lg-5 col-lg-offset-2">
-          <span class="sponsor--subheading">who is coming?</span>
-          <h1 class="section-lead">Hacker from<br>Another planet</h1>
-          <p class="section-paragraph">
-            Hackathons are communities based on learning, teaching, and creating. Thus our focus is to create a platform to facilitate
-            collaboration between sponsors and hackers, and enable great minds to join forces and create cool hacks. We’ll
-            be joined by many app developers, startup founders, engineers and …………. In addition, a hallmark of InOut is we
-            accept only the brightest of all applicants, (compared to last year’s 2000+ total applicants), who are chosen
-            based on their experience, contributions, ambition, demonstrated passion and aptitude for technology and innovation.
-          </p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -232,7 +236,7 @@
           <!--form begins-->
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 padding-top-120">
-              <h3 class="message hide section-lead short heading">Thanks, We'll be in touch with you!</h3>
+              <h3 class="message hide">Thanks, We'll be in touch with you!</h3>
               <form class="sponsorship-form" action="https://hackinout.co/api/v1/sponsors" method="POST">
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="name">Name</label>
@@ -437,7 +441,7 @@
             $('.sponsorship-form input').val("")
           },
           error: function showError (e) {
-            $('.sponsorship-form button').text('knock knock').attr("disabled", false)
+            $('.sponsorship-form button').text('SUBMIT').attr("disabled", false)
             r = jQuery.parseJSON(e.responseText).message
             // $('.message')
             //     .removeClass('hide')

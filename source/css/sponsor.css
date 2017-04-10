@@ -195,6 +195,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
     color: #FF8282 !important; 
 }
 
+.message{
+    color: #00FFC2;
+    font-size: 2em;
+    font-family: 'Rajdhani', sans-serif;
+}
+
 @media (min-width:1500px) {
     .sponsor-page .section-paragraph{
         font-size: 24px;
@@ -217,6 +223,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 @media (min-width:1201px) and (max-width: 1440px){
     .container{
         width: 1200px
+    }
+}
+
+@media (max-width:500px) {
+    .padding-top-120{
+        padding-top: 20px;
     }
 }
 
