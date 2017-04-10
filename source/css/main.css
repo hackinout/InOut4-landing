@@ -584,7 +584,7 @@ footer {
 
 .sponsor--header{
     /*background-position: right;*/
-    background-image: url(../assets/img/sponsor-header2.jpg);
+    background-image: url(../assets/img/sponsor-header.jpg);
 }
 
 .sponsor--about{
@@ -593,12 +593,6 @@ background: -moz-linear-gradient(rgba(58,58,98,1) 42%, rgba(58,58,98,1) 45%, rgb
 background: -o-linear-gradient(rgba(58,58,98,1) 42%, rgba(58,58,98,1) 45%, rgba(62,65,105,1) 48%, rgba(63,67,107,1) 49%, rgba(69,79,120,1) 54%, rgba(125,185,232,0) 99%);
 background: linear-gradient(rgba(58,58,98,1) 42%, rgba(58,58,98,1) 45%, rgba(62,65,105,1) 48%, rgba(63,67,107,1) 49%, rgba(69,79,120,1) 54%, rgba(125,185,232,0) 99%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', endColorstr='#007db9e8',GradientType=0 );
-/*background: rgb(58,58,98);
-background: -moz-linear-gradient(top,  rgba(58,58,98,1) 45%, rgba(82,82,219,1) 99%);
-background: -webkit-linear-gradient(top,  rgba(58,58,98,1) 45%,rgba(82,82,219,1) 99%);
-background: linear-gradient(to bottom,  rgba(58,58,98,1) 45%,rgba(82,82,219,1) 99%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', endColorstr='#5252db',GradientType=0 );*/
-
 }
 
 @media (max-width: 1024px){

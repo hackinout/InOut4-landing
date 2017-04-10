@@ -60,7 +60,9 @@
           <img class="header-logo" src="../assets/img/logo_header.svg" />
           <p class="subtitle">Sponsor us for</p>
           <h1 class="header-content">
-            building awareness for your brand
+            <span class="rotate">
+            building awareness for your brand | Connecting with intensely inquisitive minds | Fostering a top creator community in India | Witnessing a remarkable synergy | Nurturing your brand loyalty | Inspiring and motivating hackathon culture in India
+            </span>
           </h1>
         </div>
       </div>
@@ -70,37 +72,40 @@
 
   <!--about begins-->
   <section class="zindex">
-  <section class="sponsor--about container-fluid padding-top-120">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <span class="sponsor--subheading">about us</span>
-          <h1 class="section-lead">we are bigger <br> than before</h1>
-          <p class="section-paragraph">
-           At InOut, we believe the most important take away from a hackathon is the process of creation itself, and not merely the outcome. The fourth iteration of India's first leading hackathon is going a notch higher, fleshing out with more than 500 nation's top-most budding hackers coming together to innovate and build on an idea using the latest tech aid.
-          </p>
-        </div>
-        <div class="col-lg-5 col-lg-offset-2">
-          <div class="card">
-            <div class="quote">
-              <img src="../assets/img/quote-razorpay.svg" alt="Razorpay logo">
-              <p>"We're at InOut because it is a developer event. The number of people here is pretty good and it's one of the
-                largest student-run hackathons."</p>
-              <div class="arrowtip"></div>
-            </div>
-            <div class="person">
-              <img class="profile-avatar" src="../assets/img/avatar-razorpay.jpg" alt="Shashank Mehta's Profile picture'">
-              <div class="profile">
-                <h3 class="name">Shashank Mehta</h3>
-                <p class="designation">Product Director</p>
+    <section class="sponsor--about container-fluid padding-top-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <span class="sponsor--subheading">about us</span>
+            <h1 class="section-lead">we are bigger <br> than before</h1>
+            <p class="section-paragraph">
+              At InOut, we believe the most important take away from a hackathon is the process of creation itself, and not merely the
+              outcome. The fourth iteration of India's first leading hackathon is going a notch higher, fleshing out with
+              more than 500 nation's top-most budding hackers coming together to innovate and build on an idea using the
+              latest tech aid.
+            </p>
+          </div>
+          <div class="col-lg-5 col-lg-offset-2">
+            <div class="card">
+              <div class="quote">
+                <img src="../assets/img/quote-razorpay.svg" alt="Razorpay logo">
+                <p>"We're at InOut because it is a developer event. The number of people here is pretty good and it's one of
+                  the largest student-run hackathons."</p>
+                <div class="arrowtip"></div>
+              </div>
+              <div class="person">
+                <img class="profile-avatar" src="../assets/img/avatar-razorpay.jpg" alt="Shashank Mehta's Profile picture'">
+                <div class="profile">
+                  <h3 class="name">Shashank Mehta</h3>
+                  <p class="designation">Product Director</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-   <!--carousal-->
+    </section>
+    <!--carousal-->
 
     <div class="owl-carousel">
       <div><img src="../assets/img/about1.png" alt=""></div>
@@ -137,8 +142,11 @@
           <span class="sponsor--subheading">who is coming?</span>
           <h1 class="section-lead">Hacker from<br>Another planet</h1>
           <p class="section-paragraph">
-            Hackathons are communities based on learning, teaching, and creating. Thus our focus is to create a platform to facilitate collaboration between sponsors and hackers, and enable great minds to join forces and create cool hacks. We’ll be joined by many app developers, startup founders, engineers and ………….
-In addition, a hallmark of InOut is we accept only the brightest of all applicants, (compared to last year’s 2000+ total applicants), who are chosen based on their experience, contributions, ambition, demonstrated passion and aptitude for technology and innovation.
+            Hackathons are communities based on learning, teaching, and creating. Thus our focus is to create a platform to facilitate
+            collaboration between sponsors and hackers, and enable great minds to join forces and create cool hacks. We’ll
+            be joined by many app developers, startup founders, engineers and …………. In addition, a hallmark of InOut is we
+            accept only the brightest of all applicants, (compared to last year’s 2000+ total applicants), who are chosen
+            based on their experience, contributions, ambition, demonstrated passion and aptitude for technology and innovation.
           </p>
         </div>
       </div>
@@ -218,12 +226,13 @@ In addition, a hallmark of InOut is we accept only the brightest of all applican
         <div class="col-lg-10 col-lg-offset-1">
           <h1 class="section-lead short-heading">INTERESTED IN BECOMING THIS YEAR’S SPONSOR?</h1>
           <p class="subtitle">
-            InOut is a dedicated platform for building community in the hearts of Indian developers and we’re happy to be backed up by people who believe in intelligent giving. Consider us.
+            InOut is a dedicated platform for building community in the hearts of Indian developers and we’re happy to be backed up by
+            people who believe in intelligent giving. Consider us.
           </p>
           <!--form begins-->
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 padding-top-120">
-              <form class="sponsorship-form">
+              <form class="sponsorship-form" action="https://hackinout.co/api/v1/sponsors" method="POST">
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="name">Name</label>
                   <input type="text" name="name" id="name" placeholder="Name">
@@ -238,7 +247,7 @@ In addition, a hallmark of InOut is we accept only the brightest of all applican
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="number">Contact Number</label>
-                  <input type="tel" name="contact" id="number" placeholder="+917897897899" maxlength="13">
+                  <input type="tel" name="contact_number" id="number" placeholder="+917897897899" maxlength="13">
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="designation">Designation</label>
@@ -316,14 +325,21 @@ In addition, a hallmark of InOut is we accept only the brightest of all applican
   <!-- jQuery -->
   <script src="../js/jquery.min.js"></script>
   <!-- Custom JavaScript -->
+  <script src="https://cdn.rawgit.com/peachananr/simple-text-rotator/master/jquery.simple-text-rotator.min.js"></script>
   <script src="../js/owl.carousel.min.js"></script>
   <script>
+    $(".rotate").textrotator({
+      animation: "dissolve",
+      separator: "|",
+      speed: 4000
+    })
+
     $(document).ready(function () {
       $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 0,
         stagePadding: 50,
-        autoplay:true,
+        autoplay: true,
         responsiveClass: true,
         responsive: {
           0: {
@@ -336,8 +352,12 @@ In addition, a hallmark of InOut is we accept only the brightest of all applican
           }
         }
       });
-      console.log('ran')
     });
+
+    $('.sponsorship-form').submit(function (e) {
+      e.preventDefault()
+      console.log('ran')
+    })
   </script>
 </body>
 
