@@ -1,21 +1,10 @@
-@font-face {
-    font-family: 'Rajdhani-Semibold';
-    src: url('../assets/fonts/Rajdhani-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: 'Rajdhani-Regular';
-    src: url('../assets/fonts/Rajdhani-Regular.ttf');
-}
-
 body {
-    font-family: 'Rajdhani-Regular', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 iframe {
     padding: 0
 }
-
 
 /* header */
 
@@ -46,7 +35,8 @@ header {
 }
 
 .header-content {
-    font-family: Rajdhani-Regular;
+    font-family: 'Rajdhani';
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 500;
@@ -143,7 +133,8 @@ input:focus {
 
 .section-heading {
     text-transform: uppercase;
-    font-family: Rajdhani-Semibold;
+    font-family: 'Rajdhani';
+    font-weight: 700;
     font-size: 44px;
     line-height: 56px;
     font-weight: bold;
@@ -157,8 +148,8 @@ section {
 
 .text-color {
     color: #00FFC2;
-    font-weight: bold;
-    font-family: "Rajdhani-Semibold"
+    font-weight: 700;
+    font-family: 'Rajdhani'
 }
 
 
@@ -183,14 +174,16 @@ section {
 
 .section-lead {
     font-size: 3.375em;
-    font-weight: bold;
-    font-family: "Rajdhani-Semibold";
+    font-weight: 700;
+    font-family: 'Rajdhani';
     line-height: 1.2em;
     text-transform: uppercase;
     color: #00FFC2;
 }
 
 .section-paragraph {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     margin: 30px 0;
     font-size: 22px;
     color: rgba(255, 255, 255, 0.7);
@@ -255,9 +248,9 @@ footer {
 
 .footer-text {
     display: inline-block;
-    font-family: Rajdhani-Semibold;
+    font-family: 'Rajdhani';
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     color: #8B8BAE;
     line-height: 1.9em;
 }
@@ -359,10 +352,12 @@ footer {
 }
 
 .money h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
     margin-top: 100px;
     text-transform: uppercase;
     color: #00FFC2;
-    font-size: 25px;
 }
 
 .money p {
@@ -384,7 +379,8 @@ footer {
 
 .btn-success {
     font-size: 20px;
-    font-family: 'Rajdhani-Semibold';
+    font-family: 'Rajdhani';
+    font-weight: 700;
     background-color: #00FFC2;
     color: #3a3a62;
     padding: 10px 46px;
@@ -563,6 +559,8 @@ footer {
     }
     .section-paragraph {
         font-size: 2vw;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
     }
 }
 
