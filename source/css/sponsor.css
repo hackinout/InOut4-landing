@@ -163,6 +163,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
     border-color: #8787F7;
     margin-bottom: 10px;
     height: 44px;
+    color: #fff;
 }
 
 .sponsorship-form input:hover{
@@ -188,6 +189,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 
 .help-block{
     margin-bottom: 0;
+}
+
+.has-error{
+    color: #FF8282 !important; 
 }
 
 @media (min-width:1500px) {

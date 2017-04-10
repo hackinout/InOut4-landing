@@ -236,26 +236,26 @@
               <form class="sponsorship-form" action="https://hackinout.co/api/v1/sponsors" method="POST">
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="name">Name</label>
-                  <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+                  <input class="custom-form-control" type="text" name="name" id="name" placeholder="Name">
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="company">Comapny</label>
-                  <input class="form-control" type="text" name="company" id="company" placeholder="Company">
+                  <input class="custom-form-control" type="text" name="company" id="company" placeholder="Company">
                 </div>
                 <div class="form-group col-lg-12">
                   <label class="sr-only" for="email">Work Email</label>
-                  <input class="form-control" type="email" name="email" id="email" placeholder="name@company.com">
+                  <input class="custom-form-control" type="email" name="email" id="email" placeholder="name@company.com">
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="number">Contact Number</label>
-                  <input class="form-control" type="tel" name="contact_number" id="number" placeholder="+917897897899" maxlength="13">
+                  <input class="custom-form-control" type="tel" name="contact_number" id="number" placeholder="+917897897899" maxlength="15">
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="designation">Designation</label>
-                  <input class="form-control" type="text" name="designation" id="designation" placeholder="Designation">
+                  <input class="custom-form-control" type="text" name="designation" id="designation" placeholder="Designation">
                 </div>
                 <div class='clearfix'></div>
-                <button type="submit" class="btn btn-success submit">Knock knock</button>
+                <button type="submit" class="btn btn-success submit">SUBMIT</button>
               </form>
             </div>
           </div>
@@ -357,59 +357,72 @@
       });
     });
 
+    $('.sponsorship-form #number').on('focus', function () {
+      $('.sponsorship-form #number').val('+91')
+    })
+
+    jQuery.validator.addMethod("phone", function (value, element) {
+      return this.optional(element) || /^\+?[1-9]\d{1,14}$/.test(value);
+    }, 'Please enter a valid mobile number.');
+
     $('.sponsorship-form').validate({
-        rules: {
-            name: {
-                required: true
-            },
-            company: {
-                minlength: 3,
-                required: true
-            },
-            email: {
-            	required: true,
-              email: true
-            },
-            contact_number: {
-            	required: true,
-              minlength: 13
-            },
-            designation: {
-            required: true
-            }
+      rules: {
+        name: {
+          required: true
         },
-        messages: {
-        	name: "Please enter your full name.",
-        	email: "Please enter your work email.",
-          company: "Please enter your company name.",
-          designation: "Please enter your designation.",
-          contact_number: "Please enter valid mobile number."
+        company: {
+          minlength: 3,
+          required: true
         },
-        onfocusout: true,
-        highlight: function(element) {
-            $(element).closest('.form-group').addClass('has-error');
+        email: {
+          required: true,
+          email: true
         },
-        unhighlight: function(element) {
-            $(element).closest('.form-group').removeClass('has-error');
+        contact_number: {
+          required: true,
+          maxlength: 15,
+          minlength: 13,
+          phone: true
         },
-        errorElement: 'span',
-        errorClass: 'help-block',
-        errorPlacement: function(error, element) {
-            if(element.parent('.form-control').length) {
-                error.insertAfter(element.parent());
-            } else {
-                error.insertAfter(element);
-            }
-        },
-        submitHandler:radd
+        designation: {
+          required: true
+        }
+      },
+      messages: {
+        name: "Please enter your full name.",
+        email: "Please enter your work email.",
+        company: "Please enter your company name.",
+        designation: "Please enter your designation.",
+        contact_number: "Please enter a valid mobile number."
+      },
+      onfocusout: true,
+      highlight: function (element) {
+        $(element).closest('.form-group').addClass('has-error');
+        $(element).css('border-color', '#FF8282')
+      },
+      unhighlight: function (element) {
+        $(element).closest('.form-group').removeClass('has-error');
+        $(element).css('border-color', '#00FFC2')
+      },
+      errorElement: 'span',
+      errorClass: 'help-block',
+      errorPlacement: function (error, element) {
+        if (element.parent('.custom-form-control').length) {
+          error.insertAfter(element.parent());
+        } else {
+          error.insertAfter(element);
+        }
+      },
+      submitHandler: radd
     });
     var frm = $('.sponsorship-form')
-    function radd(){
-    $('.message').addClass('hide')
-    $('.sponsorship-form').submit(function (e) {
-      e.preventDefault()
-      $('.sponsorship-form button').text('sending..').attr("disabled", true)
-      $.ajax({
+    var api_status
+    function radd() {
+      $('.message').addClass('hide')
+      $('.sponsorship-form').submit(function (e) {
+        e.preventDefault()
+        $('.sponsorship-form button').text('Sending..').attr("disabled", true)
+        $.ajax({
           type: frm.attr('method'),
           url: frm.attr('action'),
           contentType: "application/json",
@@ -420,20 +433,45 @@
             contact_number: $('.sponsorship-form #number').val(),
             designation: $('.sponsorship-form #designation').val(),
           }),
-          success: function (data) {
-            $('.message')
-              .slideDown(500)
-              .removeClass('hide')
-            $('.sponsorship-form').slideUp(500)
+          success: function (data, xhr) {
+            $('.sponsorship-form input').val("")
           },
-          error: function (response) {
+          error: function showError (e) {
             $('.sponsorship-form button').text('knock knock').attr("disabled", false)
-            r = jQuery.parseJSON(response.responseText)
-            msg = 'Whoops! ' + r.message
+            r = jQuery.parseJSON(e.responseText).message
+            // $('.message')
+            //     .removeClass('hide')
+            //     .addClass('has-error')
+            //     .text(r)
+            return r
+          },
+          complete: function(e) {
+            api_status =  e.status
+            r = jQuery.parseJSON(e.responseText).message
+            console.log(r)
+            if (api_status === 201){
+              console.log('status:', api_status)
+              $('.message')
+                .removeClass('hide has-error')
+                .text("Thanks! You'll be hearing from us soon.")
+              $('.sponsorship-form button').text('SUBMITTED').attr("disabled", true)
+            } else if (api_status === 400){
+              console.log('status:', api_status)
+              $('.message')
+                .removeClass('hide')
+                .addClass('has-error')
+                .text(r)
+            } else {
+              console.log('status:', api_status)
+              $('.message')
+                .removeClass('hide')
+                .addClass('has-error')
+                .text("Whoops! Try again")
+            }
           }
         });
 
-    })
+      })
     }
   </script>
 </body>
