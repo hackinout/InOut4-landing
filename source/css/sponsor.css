@@ -143,7 +143,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
     text-align: center;
 }
 
-.subtitle{
+.subtitle, .section-paragraph {
     font-family: 'Lato',sans-serif;
     font-weight: 300;
     color: #c0d1ff;
