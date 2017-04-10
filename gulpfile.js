@@ -39,7 +39,7 @@ gulp.task('browser-sync', function () {
 
 
 // Build task to initiate minify tasks for CSS and JS
-gulp.task('build', ['minify-html', 'pack-minify-js', 'pack-minify-css', 'gulp-uncss',
+gulp.task('build', ['minify-html', 'pack-minify-js', 'pack-minify-css', 'pack-minify-sponsor-css', 'gulp-uncss',
   'copy-sponsor', 'copy-fonts', 'copy-css', 'image-optim'
 ])
 
@@ -71,6 +71,17 @@ gulp.task('pack-minify-js', function (cb) {
 gulp.task('pack-minify-css', function () {
   return gulp.src(['source/css/*.css', '!source/css/*.min.css'])
     .pipe(concat('main.css'))
+    .pipe(cleanCss())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('public/css'))
+})
+
+// Task to minify sponsor CSS
+gulp.task('pack-minify-sponsor-css', function () {
+  return gulp.src(['source/css/*.css', '!source/css/*.min.css'])
+    .pipe(concat('sponsor.css'))
     .pipe(cleanCss())
     .pipe(rename({
       suffix: '.min'
