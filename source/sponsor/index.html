@@ -232,27 +232,29 @@
           <!--form begins-->
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 padding-top-120">
+              <h3 class="message hide section-lead short heading">Thanks, We'll be in touch with you!</h3>
               <form class="sponsorship-form" action="https://hackinout.co/api/v1/sponsors" method="POST">
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="name">Name</label>
-                  <input type="text" name="name" id="name" placeholder="Name">
+                  <input class="form-control" type="text" name="name" id="name" placeholder="Name">
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="company">Comapny</label>
-                  <input type="text" name="company" id="company" placeholder="Company">
+                  <input class="form-control" type="text" name="company" id="company" placeholder="Company">
                 </div>
                 <div class="form-group col-lg-12">
                   <label class="sr-only" for="email">Work Email</label>
-                  <input type="email" name="email" id="email" placeholder="name@company.com">
+                  <input class="form-control" type="email" name="email" id="email" placeholder="name@company.com">
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="number">Contact Number</label>
-                  <input type="tel" name="contact_number" id="number" placeholder="+917897897899" maxlength="13">
+                  <input class="form-control" type="tel" name="contact_number" id="number" placeholder="+917897897899" maxlength="13">
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="sr-only" for="designation">Designation</label>
-                  <input type="text" name="designation" id="designation" placeholder="Designation">
+                  <input class="form-control" type="text" name="designation" id="designation" placeholder="Designation">
                 </div>
+                <div class='clearfix'></div>
                 <button type="submit" class="btn btn-success submit">Knock knock</button>
               </form>
             </div>
@@ -327,6 +329,7 @@
   <!-- Custom JavaScript -->
   <script src="https://cdn.rawgit.com/peachananr/simple-text-rotator/master/jquery.simple-text-rotator.min.js"></script>
   <script src="../js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
   <script>
     $(".rotate").textrotator({
       animation: "dissolve",
@@ -354,10 +357,84 @@
       });
     });
 
+    $('.sponsorship-form').validate({
+        rules: {
+            name: {
+                required: true
+            },
+            company: {
+                minlength: 3,
+                required: true
+            },
+            email: {
+            	required: true,
+              email: true
+            },
+            contact_number: {
+            	required: true,
+              minlength: 13
+            },
+            designation: {
+            required: true
+            }
+        },
+        messages: {
+        	name: "Please enter your full name.",
+        	email: "Please enter your work email.",
+          company: "Please enter your company name.",
+          designation: "Please enter your designation.",
+          contact_number: "Please enter valid mobile number."
+        },
+        onfocusout: true,
+        highlight: function(element) {
+            $(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function(element) {
+            $(element).closest('.form-group').removeClass('has-error');
+        },
+        errorElement: 'span',
+        errorClass: 'help-block',
+        errorPlacement: function(error, element) {
+            if(element.parent('.form-control').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        },
+        submitHandler:radd
+    });
+    var frm = $('.sponsorship-form')
+    function radd(){
+    $('.message').addClass('hide')
     $('.sponsorship-form').submit(function (e) {
       e.preventDefault()
-      console.log('ran')
+      $('.sponsorship-form button').text('sending..').attr("disabled", true)
+      $.ajax({
+          type: frm.attr('method'),
+          url: frm.attr('action'),
+          contentType: "application/json",
+          data: JSON.stringify({
+            name: $('.sponsorship-form #name').val(),
+            company: $('.sponsorship-form #company').val(),
+            email: $('.sponsorship-form #email').val(),
+            contact_number: $('.sponsorship-form #number').val(),
+            designation: $('.sponsorship-form #designation').val(),
+          }),
+          success: function (data) {
+            $('.message')
+              .slideDown(500)
+              .removeClass('hide')
+            $('.sponsorship-form').slideUp(500)
+          },
+          error: function (response) {
+            $('.sponsorship-form button').text('knock knock').attr("disabled", false)
+            r = jQuery.parseJSON(response.responseText)
+            msg = 'Whoops! ' + r.message
+          }
+        });
+
     })
+    }
   </script>
 </body>
 

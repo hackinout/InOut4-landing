@@ -161,7 +161,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
     background-color: #8787F7;
     box-shadow: 0 12px 14px 0 rgba(0,0,0,0.13);
     border-color: #8787F7;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     height: 44px;
 }
 
@@ -184,6 +184,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 .btn-success:hover{
     box-shadow: 0 12px 14px 0 rgba(0,0,0,0.2);
     color: #3a3a62;
+}
+
+.help-block{
+    margin-bottom: 0;
 }
 
 @media (min-width:1500px) {
