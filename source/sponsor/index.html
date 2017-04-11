@@ -454,66 +454,55 @@
           error.insertAfter(element);
         }
       },
-      submitHandler: radd
-    });
-    var frm = $('.sponsorship-form')
-    var api_status
-    function radd() {
+      submitHandler: function () {
       $('.message').addClass('hide')
-      $('.sponsorship-form').submit(function (e) {
-        e.preventDefault()
-        $('.sponsorship-form button').text('Sending..').attr("disabled", true)
-        $.ajax({
-          type: frm.attr('method'),
-          url: frm.attr('action'),
-          contentType: "application/json",
-          data: JSON.stringify({
-            name: $('.sponsorship-form #name').val(),
-            company: $('.sponsorship-form #company').val(),
-            email: $('.sponsorship-form #email').val(),
-            contact_number: $('.sponsorship-form #number').val(),
-            designation: $('.sponsorship-form #designation').val(),
-          }),
-          success: function (data, xhr) {
-            $('.sponsorship-form input').val("")
-          },
-          error: function showError(e) {
-            $('.sponsorship-form button').text('SUBMIT').attr("disabled", false)
-            r = jQuery.parseJSON(e.responseText).message
-            // $('.message')
-            //     .removeClass('hide')
-            //     .addClass('has-error')
-            //     .text(r)
-            return r
-          },
-          complete: function (e) {
-            api_status = e.status
-            r = jQuery.parseJSON(e.responseText).message
-            console.log(r)
-            if (api_status === 201) {
-              console.log('status:', api_status)
-              $('.message')
-                .removeClass('hide has-error')
-                .text("Thanks! You'll be hearing from us soon.")
-              $('.sponsorship-form button').text('SUBMITTED').attr("disabled", true)
-            } else if (api_status === 400) {
-              console.log('status:', api_status)
-              $('.message')
-                .removeClass('hide')
-                .addClass('has-error')
-                .text(r)
-            } else {
-              console.log('status:', api_status)
-              $('.message')
-                .removeClass('hide')
-                .addClass('has-error')
-                .text("Whoops! Try again")
-            }
+      $('.sponsorship-form button').text('Sending..').attr("disabled", true)
+      $.ajax({
+        type: $frm.attr('method'),
+        url: $frm.attr('action'),
+        contentType: "application/json",
+        data: JSON.stringify({
+          name: $('.sponsorship-form #name').val(),
+          company: $('.sponsorship-form #company').val(),
+          email: $('.sponsorship-form #email').val(),
+          contact_number: $('.sponsorship-form #number').val(),
+          designation: $('.sponsorship-form #designation').val(),
+        }),
+        success: function (data, xhr) {
+          $('.sponsorship-form input').val("")
+        },
+        error: function showError(e) {
+          $('.sponsorship-form button').text('SUBMIT').attr("disabled", false)
+          r = jQuery.parseJSON(e.responseText).message
+          return r
+        },
+        complete: function (e) {
+          api_status = e.status
+          r = jQuery.parseJSON(e.responseText).message
+          console.log(r)
+          if (api_status === 201) {
+            console.log('status:', api_status)
+            $('.message')
+              .removeClass('hide has-error')
+              .text("Thanks! You'll be hearing from us soon.")
+            $('.sponsorship-form button').text('SUBMITTED').attr("disabled", true)
+          } else if (api_status === 400) {
+            console.log('status:', api_status)
+            $('.message')
+              .removeClass('hide')
+              .addClass('has-error')
+              .text(r)
+          } else {
+            console.log('status:', api_status)
+            $('.message')
+              .removeClass('hide')
+              .addClass('has-error')
+              .text("Whoops! Try again")
           }
-        });
-
-      })
+        }
+      });
     }
+    });
   </script>
 </body>
 
