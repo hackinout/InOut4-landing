@@ -398,6 +398,8 @@
       });
     });
 
+    var api_status
+
     $('.sponsorship-form #number').on('focus', function () {
       $('.sponsorship-form #number').val('+91')
     })
@@ -436,7 +438,6 @@
         designation: "Please enter your designation.",
         contact_number: "Please enter a valid mobile number."
       },
-      onfocusout: true,
       highlight: function (element) {
         $(element).closest('.form-group').addClass('has-error');
         $(element).css('border-color', '#FF8282')
@@ -454,57 +455,60 @@
           error.insertAfter(element);
         }
       },
-      submitHandler: $('.sponsorship-form').submit(function (e) {
-        var $frm = $('.sponsorship-form')
-        var api_status
-      e.preventDefault()
-      $('.message').addClass('hide')
-      $('.sponsorship-form button').text('Sending..').attr("disabled", true)
-      $.ajax({
-        type: $frm.attr('method'),
-        url: $frm.attr('action'),
-        contentType: "application/json",
-        data: JSON.stringify({
-          name: $('.sponsorship-form #name').val(),
-          company: $('.sponsorship-form #company').val(),
-          email: $('.sponsorship-form #email').val(),
-          contact_number: $('.sponsorship-form #number').val(),
-          designation: $('.sponsorship-form #designation').val(),
-        }),
-        success: function (data, xhr) {
-          $('.sponsorship-form input').val("")
-        },
-        error: function showError(e) {
-          $('.sponsorship-form button').text('SUBMIT').attr("disabled", false)
-          r = jQuery.parseJSON(e.responseText).message
-          return r
-        },
-        complete: function (e) {
+      submitHandler: function (form) {
+        console.log('called', form)
+        $('.message').addClass('hide')
+        // e.preventDefault()
+        $('.sponsorship-form button').text('Sending..').attr("disabled", true)
+        $.ajax({
+          type: "POST",
+          url: "https://hackinout.co/api/v1/sponsors",
+          contentType: "application/json",
+          data: JSON.stringify({
+            name: $('.sponsorship-form #name').val(),
+            company: $('.sponsorship-form #company').val(),
+            email: $('.sponsorship-form #email').val(),
+            contact_number: $('.sponsorship-form #number').val(),
+            designation: $('.sponsorship-form #designation').val(),
+          }),
+          success: function (data, xhr) {
+            $('.sponsorship-form input').val("")
+          },
+          error: function showError(e) {
+            $('.sponsorship-form button').text('SUBMIT').attr("disabled", false)
+            r = jQuery.parseJSON(e.responseText).message
+            return r
+          },
+          complete: function (e) {
           api_status = e.status
           r = jQuery.parseJSON(e.responseText).message
-          console.log(r)
+          console.log('status:', api_status)
           if (api_status === 201) {
-            console.log('status:', api_status)
             $('.message')
               .removeClass('hide has-error')
               .text("Thanks! You'll be hearing from us soon.")
             $('.sponsorship-form button').text('SUBMITTED').attr("disabled", true)
           } else if (api_status === 400) {
-            console.log('status:', api_status)
             $('.message')
               .removeClass('hide')
               .addClass('has-error')
               .text(r)
+          } else if (api_status === 429) {
+            $('.message')
+              .removeClass('hide')
+              .addClass('has-error')
+              .text('Slow down, API Limit exceeded!')
           } else {
-            console.log('status:', api_status)
             $('.message')
               .removeClass('hide')
               .addClass('has-error')
               .text("Whoops! Try again")
           }
         }
-      });
-    })
+
+        });
+        return false;
+      }
     });
   </script>
 </body>
