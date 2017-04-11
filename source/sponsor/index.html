@@ -456,9 +456,7 @@
         }
       },
       submitHandler: function (form) {
-        console.log('called', form)
         $('.message').addClass('hide')
-        // e.preventDefault()
         $('.sponsorship-form button').text('Sending..').attr("disabled", true)
         $.ajax({
           type: "POST",
