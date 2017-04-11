@@ -17,6 +17,9 @@
     background-position: 100% 0;
 }
 
+.header-content  {
+    font-weight: 700;
+}
 .sponsor--about{
 background: -webkit-linear-gradient(rgba(58,58,98,1) 42%, rgba(58,58,98,1) 45%, rgba(62,65,105,1) 48%, rgba(63,67,107,1) 49%, rgba(69,79,120,1) 54%, rgba(125,185,232,0) 99%);
 background: -moz-linear-gradient(rgba(58,58,98,1) 42%, rgba(58,58,98,1) 45%, rgba(62,65,105,1) 48%, rgba(63,67,107,1) 49%, rgba(69,79,120,1) 54%, rgba(125,185,232,0) 99%);
