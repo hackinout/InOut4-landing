@@ -11,7 +11,7 @@ var del = require('del')
 var uncss = require('gulp-uncss')
 var uglify = require('gulp-uglify')
 var pump = require('pump')
-var imagemin = require('gulp-imagemin')
+// var imagemin = require('gulp-imagemin')
 
 // Default Gulp task to run including all necessary dependencies
 gulp.task('default', ['browser-sync', 'build'], function () {
@@ -40,7 +40,7 @@ gulp.task('browser-sync', function () {
 
 // Build task to initiate minify tasks for CSS and JS
 gulp.task('build', ['minify-html', 'pack-minify-js', 'pack-minify-css', 'pack-minify-sponsor-css', 'gulp-uncss',
-  'copy-sponsor', 'copy-fonts', 'copy-css', 'image-optim'
+  'copy-sponsor', 'copy-img', 'copy-css'
 ])
 
 // Task to minify HTML
@@ -99,11 +99,11 @@ gulp.task('gulp-uncss', function () {
     .pipe(gulp.dest('public/css'))
 })
 
-gulp.task('image-optim', function () {
-  return gulp.src('source/assets/img/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('public/assets/img'))
-})
+// gulp.task('image-optim', function () {
+//   return gulp.src('source/assets/img/*')
+//     .pipe(imagemin())
+//     .pipe(gulp.dest('public/assets/img'))
+// })
 
 // // Task to copy assets
 gulp.task('copy-sponsor', function () {
@@ -112,9 +112,9 @@ gulp.task('copy-sponsor', function () {
 })
 
 // // Task to copy assets
-gulp.task('copy-fonts', function () {
-  return gulp.src('source/assets/fonts/*')
-    .pipe(gulp.dest('public/assets/fonts'))
+gulp.task('copy-img', function () {
+  return gulp.src('source/assets/img/*')
+    .pipe(gulp.dest('public/assets/img'))
 })
 
 gulp.task('copy-css', function () {

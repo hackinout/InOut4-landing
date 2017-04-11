@@ -454,7 +454,10 @@
           error.insertAfter(element);
         }
       },
-      submitHandler: function () {
+      submitHandler: $('.sponsorship-form').submit(function (e) {
+        var $frm = $('.sponsorship-form')
+        var api_status
+      e.preventDefault()
       $('.message').addClass('hide')
       $('.sponsorship-form button').text('Sending..').attr("disabled", true)
       $.ajax({
@@ -501,7 +504,7 @@
           }
         }
       });
-    }
+    })
     });
   </script>
 </body>
