@@ -11,7 +11,6 @@ var del = require('del')
 var uncss = require('gulp-uncss')
 var uglify = require('gulp-uglify')
 var pump = require('pump')
-// var imagemin = require('gulp-imagemin')
 
 // Default Gulp task to run including all necessary dependencies
 gulp.task('default', ['browser-sync', 'build'], function () {
@@ -23,18 +22,10 @@ gulp.task('default', ['browser-sync', 'build'], function () {
   ], reload)
 })
 
-// Task to initiate browser-sync proxy server
-// var src = {
-//     js: 'source/js/*.js',
-//     css:  'source/css/*.css',
-//     html: 'source/*.html'
-// }
 gulp.task('browser-sync', function () {
   browserSync.init({
     server: './public'
   })
-  // gulp.watch(src.html, src.css, src.js, ['build'])
-  // gulp.watch(src.html, src.css, src.js).on('change', reload)
 })
 
 
@@ -99,12 +90,6 @@ gulp.task('gulp-uncss', function () {
     .pipe(gulp.dest('public/css'))
 })
 
-// gulp.task('image-optim', function () {
-//   return gulp.src('source/assets/img/*')
-//     .pipe(imagemin())
-//     .pipe(gulp.dest('public/assets/img'))
-// })
-
 // // Task to copy assets
 gulp.task('copy-sponsor', function () {
   return gulp.src('source/sponsor/*')
@@ -126,5 +111,3 @@ gulp.task('copy-css', function () {
 gulp.task('clean', function () {
   return del(['public/**', '!public'])
 })
-
-

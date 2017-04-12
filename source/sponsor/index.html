@@ -483,7 +483,6 @@
           complete: function (e) {
           api_status = e.status
           r = jQuery.parseJSON(e.responseText).message
-          console.log('status:', api_status)
           if (api_status === 201) {
             $('.message')
               .removeClass('hide has-error')

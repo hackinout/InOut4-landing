@@ -12,7 +12,6 @@
 }
 
 .sponsor--header{
-    /*background-position: right;*/
     background-image: url(../assets/img/sponsor-header.jpg);
     background-position: 100% 0;
 }
@@ -61,7 +60,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 .zindex{
     z-index: 5;
     padding-bottom: 0;
-    /*background-color: #5252db; */
 }
 
 .owl-carousel{
@@ -76,7 +74,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 }
 
 .card{
-    /*max-width: 500px*/
     margin-top: 20px;
 }
 
@@ -89,19 +86,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 .arrowtip{
     position: relative;
     width: 0;
-    /*left: 40px;*/
     bottom: -24px;
     border-top: 30px solid #00FFC2;
-    /*border-right: 52px solid #00FFC2;*/
-    /*border-bottom: 25px solid transparent;*/
     border-left: 64px solid transparent;
-    /*transform: rotateZ(-180deg);*/
 }
 
 .quote p {
     font-size: 22px;
     padding-top: 16px;
-    /*font-style: italic;*/
 }
 
 .quote img{
@@ -220,10 +212,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
     color: #00FFC2;
     font-size: 2em;
     font-family: 'Rajdhani', sans-serif;
-}
-
-.sponsor--icon{
-    /*max-width: 74px;*/
 }
 
 .icon-text{

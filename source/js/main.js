@@ -3,7 +3,6 @@ var av = document.querySelector('.about-video')
 
 if (windowWidth > 992) {
   av.classList.add('flex')
-  console.log(av.classList)
 } else {
   av.classList.remove('flex')
 }
@@ -24,11 +23,9 @@ $(document).ready(function () {
   $('#play-video').on('click', function (ev) {
     $('#video')[0].src = url + '?autoplay=1'
     ev.preventDefault()
-    console.log('played')
   })
   $('#play-modal').on('hidden.bs.modal', function (e) {
     $('#play-modal iframe').attr('src', url)
-    console.log('stopped')
   })
   $('.video-container').hover(function () {
     $('.play-button').toggleClass('scale')
@@ -59,7 +56,6 @@ function register($form) {
       $('#mc-embedded-subscribe').val('subscribe')
       if (data.result != 'success') {
         // Something went wrong, do something to notify the user.
-        console.log(data.msg)
         $('#mce-EMAIL').css('borderColor', '#ff8282')
         $('#subscribe-result').css('color', '#ff8282')
         if (data.msg.indexOf("already") >= 0) {
@@ -69,7 +65,6 @@ function register($form) {
         }
       } else {
         // Yeahhhh Success
-        console.log(data.msg)
         $('#mce-EMAIL').css('borderColor', '#ffffff')
         $('#subscribe-result').css('color', '#ffffff')
         $('#subscribe-result').html('<p>Thank you for subscribing. We have sent you a confirmation email.</p>')
