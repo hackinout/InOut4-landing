@@ -19,6 +19,7 @@ header {
     -o-background-size: cover;
     background-position: calc(100% + 326px) calc(100%);
     background-image: url(../assets/img/header.png);
+    min-height: 720px;
 }
 
 .header-logo {
