@@ -104,6 +104,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
     /*font-style: italic;*/
 }
 
+.quote img{
+    height: 40px;
+}
+
 .person{
     margin-left: 120px;
     margin-top: 20px;
@@ -193,6 +197,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a62', end
 
 .btn-success{
     box-shadow: 0 12px 14px 0 rgba(0,0,0,0.13);
+}
+
+.sponsor-page .btn-success{
     margin-top: 15px;
 }
 
