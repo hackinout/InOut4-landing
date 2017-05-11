@@ -80,6 +80,17 @@ gulp.task('pack-minify-sponsor-css', function () {
     .pipe(gulp.dest('public/css'))
 })
 
+// Task to minify campus CSS
+// gulp.task('pack-minify-campus-css', function () {
+//   return gulp.src(['source/css/campus.css', '!source/css/*.min.css'])
+//     .pipe(concat('sponsor.css'))
+//     .pipe(cleanCss())
+//     .pipe(rename({
+//       suffix: '.min'
+//     }))
+//     .pipe(gulp.dest('public/css'))
+// })
+
 // Task to remove unused css
 gulp.task('gulp-uncss', function () {
   return gulp.src('./css/bootstrap-custom.css')
@@ -92,8 +103,8 @@ gulp.task('gulp-uncss', function () {
 
 // // Task to copy assets
 gulp.task('copy-sponsor', function () {
-  return gulp.src('source/sponsor/*')
-    .pipe(gulp.dest('public/sponsor'))
+  return gulp.src('source/**/*.html')
+    .pipe(gulp.dest('public/'))
 })
 
 // // Task to copy assets
