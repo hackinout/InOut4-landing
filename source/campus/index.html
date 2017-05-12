@@ -354,7 +354,7 @@
         $('.sponsorship-form button').text('Sending..').attr("disabled", true)
         $.ajax({
           type: "POST",
-          url: "https://hackinout.co/api/v1/campus",
+          url: "https://hackinout.co/api/v1/community",
           contentType: "application/json",
           data: JSON.stringify({
             name: $('.sponsorship-form #name').val(),
