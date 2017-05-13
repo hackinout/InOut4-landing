@@ -17,10 +17,11 @@
 }
 
 .campus-card{
-    background: #5252DB;
+    /*background: #5252DB;*/
+    background: #486ed4;
     padding-bottom: 1px;
     margin-bottom: 30px;
-    min-height: 500px;
+    min-height: 515px;
 }
 /*
 .campus-card img{
@@ -58,21 +59,12 @@
 }
 
 .campus--campus-us{
-    background-color: #3a3a62;
+    background-color: #5252DB;
 }
 
 .campus--campus-us h1 {
     text-align: center;
 }
-
-/*.icon-text{
-    color: #fff;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 16px;
-    position: absolute;
-    top: 30px;
-}*/
-
 
 @media (max-width:1200px) {
     .campus--header{
@@ -96,4 +88,7 @@
     color: #3A3A62 !important;
 }
 
+.campus--form{
+    background-color: #484cc3 !important
+}
 /*=====  End of campus page  ======*/
