@@ -13,8 +13,31 @@
 }
 
 .campus--about{
-    background-color: #3a3a62;
+    background-color: #21223f;
+    /*background-image: url('../assets/img/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 100%*/
+    padding: 0;
 }
+
+.campus--about section{
+    width: 50%;
+}
+.about-left{
+    min-height: 300px;
+    float: left;
+    background-image: url('../assets/img/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%
+}
+
+.about-right{
+    float: right
+}
+
+
 
 .campus-card{
     /*background: #5252DB;*/
@@ -41,9 +64,8 @@
     .section-paragraph{
         font-size: 16px !important; 
     }
-
-    .quote p{
-        font-size: 18px !important;
+    .campus--about section{
+        width: 100%;
     }
 }
 
@@ -91,4 +113,29 @@
 .campus--form{
     background-color: #484cc3 !important
 }
+
+.left-sep, .right-sep{
+    padding: 40px 0
+}
+
+@media (max-width: 990px) {
+    .left-sep{
+        border-bottom: 1px solid #3a3a62
+    }
+}
+
+@media (min-width: 991px) {
+    .right-sep{
+        border-left: 1px solid #3a3a62
+    }
+    
+    .left-sep, .right-sep{
+        padding: 120px 0
+    }
+}
+
+.padding-bottom-0{
+    padding-bottom: 0 !important;
+}
 /*=====  End of campus page  ======*/
+
