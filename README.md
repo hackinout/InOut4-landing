@@ -1,4 +1,4 @@
-# InOut: India's leading Hackathon
+# InOut: India's biggest community hackathon
 Landing page of InOut 4 [WIP]
 
 
